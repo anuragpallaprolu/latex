@@ -187,7 +187,19 @@ Using this inequaliyl and tending R to infinite i.e, potentially covering the en
 If $f$ is entire and bounded in the complex plane then, $f(z)$ must be a constant function throughout the plane.
 
 \item[Maximum Modulus Principle] \hfill \\
+	To sort this out, we must first look at \textbf{Gauss\rq{}s mean value theorem}. Let $f(z)$ be an analytic function in some domian $\mathcal{D}$ and let it be a circular domain with radius $\rho$. If $z_{0}$ is the center of $\mathcal{D}$. Then the following identity exists
+$$f(z_{0}) = \frac{1}{2\pi}\int_0^{2\pi} f(z_{0} + \rho\exp(i\theta))\mathrm{d}\theta$$
+	Then, the maximum modulus principle states that, if a function $f$ is analytic and non constant in a given domain $\mathcal{D}$,then $|f(z)|$ has no maximum value in $\mathcal{D}$. That is, there is no point $z_{0}$ in the domain such that $|f(z)| \leq |f(z_{0})|$ for all points $z$ in it.  This has a very interesting corollary. Suppose that $f$ is continuous on a closed bounded region $\mathcal{R}$ and that it is analytic and non constant in the interior of $\mathcal{R}$. Then, the maximum value of $f$ occurs only on the boundaries of $\mathcal{R}$ and \textbf{never} in the interior. This principle is also sometimes called as \textbf{extremal principle} for its nature of finding extrema on the boundaries.
+\end{description}
+\section{Taylor and Laurent Series}
+ We now move on to representing analytic functions in forms of power series of a variable z. This procedure usually leads to two cases. If the domain in which we are generating the series has singularities, then these cannot be included in a \textbf{Taylor series} because the series expansion usually has positive powers of the variable and hence does not account for any indefiniteness. However, when we discuss about \textbf{Laurent Series} we usually include the exponent of the variable starting from $-\infty$ to $\infty$. Hence, any sort of singularities such as \textbf{multiple poles} and \textbf{essential singularities} can be represented as either an exponent having a finite negative exponent or $-\infty$ negative exponent for an irremovable singularity.
 
+There won\rq{}t be much of a discussion about series here. Just the two formulae will be presented here.
+\begin{description}
+\item[Taylor] \hfill \\
+	Let $f$ be any analytic function in a domain $\mathcal{D}$, then it can be expressed as a power series sum:
+$$f(z) = \sum_n^{\infty} a_{n}(z-z_{0})^n$$ where $a_{n}$ depend upon the functional derivatives of $f$ and are given by the old Cauchy formula:
+$$f^n(z_{0}) = \frac{n!}{2\pi i} \int_\mathcal{C} \frac{f(s) \mathrm{d}s}{(s-z)^(n+1)}$$
 \end{description}
 
 \end{sloppypar}
