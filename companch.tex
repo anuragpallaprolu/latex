@@ -1,0 +1,194 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}                                                                                                                                                      
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+                                        
+\begin{document}
+\begin{sloppypar}
+\title{Theorems in Complex Analysis}
+\author{A cheat sheet for formulae \\Anurag Pallaprolu\\ BITS Pilani}
+\maketitle
+\section{Preliminary Definitions and Formalities}
+We shall start with the basics of the complex number field $\mathbb{C}$. The axiomatic definition follows from the fact that they are all ordered pairs of two reals plotted on the Argand diagram. To name a few standard field properties
+
+\begin{enumerate}
+
+\item $z_{1} + z_{2} = z_{2} + z_{1}$
+
+\item $(z_{1} + z_{2} )+ z_{3} = z_{1} + (z_{2}+z_{3})$
+\item $z + 0 = z$
+\item $z*1 = z$
+
+\end{enumerate}
+
+Now we move on to a few standard inequalities like the two triangle inequalities:
+
+\begin{description}
+\item[Triangle Inequality] \hfill \\
+	$|z_{1}\pm z_{2}| \leq |z_{1}|+|z_{2}|$ \\
+	$|z_{1}\pm z_{2}| \geq ||z_{1}|-|z_{2}||$ \\
+	We can generalize the first one by induction\\
+	\begin{equation}
+	|\sum_{i=1}^{n} z_i| \leq \sum_{i=1}^{n} |z_i|
+	\end{equation}
+\end{description}
+
+Also we must not forget the most important equation of all of complex analysis, the Euler equation and its obvious generalization, the De Moivre formula
+
+\begin{equation}
+	\tag{*}
+	\exp(i\theta) = \cos(\theta) + i\sin(\theta)
+	\label{eqn:Euler}
+\end{equation}
+\begin{equation}
+	\exp(in\theta) = \cos(n\theta) + i\sin(n\theta)
+\end{equation}
+
+The nth roots of any complex number z can be given from the above forumlae as
+\begin{equation}
+	z = \sqrt[n]{r_{0}} exp(i(\theta+2k\pi)/n)
+\end{equation}
+where $r_{0}$ is the length or the modulus of z and $\theta$ is the argument of z in the complex plane. This will be all for the basic equations that one must have in mind when studying complex analysis. 
+
+\section{Analytic Functions}
+Functions of a complex variable share many properties similar to vector fields. To review the definition of a vector field, it is a vector function whose components are also functions of the cartesian or any set of coordinates. Mathematically, we can state a vector field $\mathcal{F}: \mathbb{R}^{3} \rightarrow \mathcal{V}$ as,
+$$\mathcal{F}(x,y,z) = u(x,y,z)\mathbf{i} + v(x,y,z)\mathbf{j} + w(x,y,z)\mathbf{k}$$
+except that in the case of complex numbers, we usually map from the set of real ordered pairs to the complex number space as 
+$$f(z) = u(x,y)+iv(x,y)$$ where both $u$ and $v$ are functions from $\mathbb{R}^{2} \to \mathbb{R}$. Most of the functions that occur in complex analysis starkly differ from what we encounter in reals that is, they are mostly multivalued, even standard single valued functions like the logarithm. 
+
+\subsection{Limits and continuity}
+As in any analysis course, we have to first focus on limits and continuity. Limits of complex functions are rather simple to evaluate, following similar rules as to real functions. Here are two theorems that should suffice the discussion on limits.
+\begin{description}
+\item[Theroem 1] \hfill \\
+	If $f(z) =  u(x,y)+iv(x,y)$ and $z_{0} = x_{0}+iy_{0}$ and $w_{0} = u_{0} + iv_{0}$., then if 
+	$$lim_{z \to z_{0}} f(z) = w_{0}$$ iff
+	$$lim_{(x,y) \to (x_{0},y_{0})} u(x,y) = u_{0}$$ $$lim_{(x,y) \to (x_{0},y_{0})} v(x,y) = v_{0}$$
+\item[Theorem 2] \hfill \\
+	Suppose that $lim_{z \to z_{0}} f(z) = w_{0}$ and $lim_{z \to z_{0}} F(z) = W_{0}$ then
+	$$lim_{z \to z_{0}} f(z) + F(z) = w_{0} + W_{0}$$
+	$$lim_{z \to z_{0}} f(z)*F(z) = w_{0}*W_{0}$$
+	$$lim_{z \to z_{0}} f(z)/F(z) = w_{0}/W_{0}$$
+The last equality will exist under obvious circumstances. 
+\end{description}
+
+So much for limit evaluation. Let us now look at continuity of functions. This is too, much similar to what we have studied in real analysis. To be more succint, a function f(z) is continuous at $z_{0}$ if the following conditions are satisfied:\\
+$$lim_{z \to z_{0}}f(z)$$ exists\\
+$$f(z_{0})$$ exists \\
+$$lim_{z \to z_{0}}f(z) = f(z_{0})$$ \\
+And as usual, there is the all the more important theorem of continuity
+\begin{description}
+\item[The composition of continuous functions is itself a continuous function]  \hfill \\
+	A statement which can be proven directly from the Cauchy definition of continuity. 
+\item[Continuity at a point and the value of the function] \hfill \\
+	If a function is continuous and non zero at a point, then it is also non zero in any $\delta$ interval of the point. Failure of this clause might lead to pathological properties of functions at hand such as fractal discontinuities etc.
+\end{description}
+
+\subsection{Derivatives and Analytic Property}
+Now, we get to the interesting part of analysis. The definition of the complex derivative is given below
+$$f\rq{}(z_{0}) = lim_{z \to z_{0}}\frac{f(z) - f(z_{0})}{z-z_{0}}$$. Functions of the explicit complex variable z, the calculus of such functions is not complicated as all that is needed is to replace z as any real quantity and proceed with the analysis. However, functions of two $real$ variables, we have to be careful, for they are restricted by the concept of $analyticity$.
+But first, the important theorem
+\begin{description}
+\item[Cauchy Riemann Equations] \hfill \\
+	If the function $$f(z)= u(x,y)+iv(x,y)$$ is differentiable at any point z, then the components u and v should satisfy the Cauchy Riemann conditions i.e;
+	\begin{equation}
+	\partial u/\partial x = \partial v/\partial y
+	\end{equation}
+	\begin{equation}
+	\partial u/\partial y = -\partial v/\partial x
+\end{equation}
+\end{description}
+ The Cauchy Riemann conditions are neccesary but not sufficient conditions for differentiability. That is, a slight adjustment can be made so that these equations provide a sufficient condition. The theorem below follows,
+ \begin{description}
+\item[Modified Cauchy Riemann Theorem] \hfill \\
+	If the function $$f(z)= u(x,y)+iv(x,y)$$ is differentiable at any point z, and is defined through an $\delta$ neighbourhood of a point z and the first order partial derivatives of u and v exist everywhere in the neighbourhood. If the partials are smooth enough, and satisfy 
+	$$\partial u/\partial x = \partial v/\partial y$$
+	$$\partial u/\partial y = -\partial v/\partial x$$
+then the hypothesis is claimed to be true. 
+\end{description}
+Now we can extend the equations to polar coordinates as well. Noting that there is \eqref{eqn:Euler} for switching from both systems, we can see that the new equations take the form of,
+	\begin{equation}
+	r\partial u/\partial r = \partial v/\partial \theta
+	\end{equation}
+	\begin{equation}
+	\partial u/\partial \theta = -r\partial v/\partial r
+\end{equation}
+\begin{description}
+\item[Harmonic Functions] \hfill \\
+	Functions which satisfy the Laplace equation
+	$$\vec \nabla^2 \mathcal{F} = 0$$ are called as harmonic functions. The components which satisfy the Cauchy Riemann conditions also, inherently satisfy the Laplace equation
+	\textbf{The components of any ananlytic function are also harmonic}. This is the important result that must be carried on. 
+\item[Schwarz Reflection Principle] \hfill \\
+	Another important, and the last concept in analyticity is the famous reflection principle. Suppose that a function $f$ is analytic in some domain $\mathcal{D}$ which contains a segment of the x axis and is also such that the lower half is a reflection of the upper half in the axis. Then we can say that
+	$$\overline{f(z)} = f(\overline{z})$$
+\end{description}
+
+\section{Integrals of Complex Functions}
+As in any analysis procedure, we must also include integration. Integration is much more native to mathematics than differentiation because, it carries a much more clearer physical meaning as the area under a real curve. But in complex analysis, this clarity will be lost slightly as we look at various types of integral evaluation techniques. However, there will always be the method of converting the complex integral to sum of real and imaginary integrals just like how you convert a vector integral into many scalar integrals. But do note that, just like vector identities such as Stokes\rq{} theorem and Green\rq{}s theorems, there are parallel theorems in complex analysis to resolve issues.
+
+We begin with a simple definition of contour integrals and a theorem.
+
+\subsection{Contour Integration and the Modulus Upper Bound theorem}
+We must get a little bit pedantic here and introduce a few important terms. A set of points $z = (x,y)$ is called an \textbf{arc} if there exists a continuous parametrization of both x and y i.e.,
+$$x = x(t)$$
+$$y = y(t)$$ 
+Such types of arcs are classified even further as \textbf{Jordan arc}s or simple arcs if they never cross each other. If there are points $k$ and $l$ such that $z(k) = z(l)$ then, the curve is called as a \textbf{Jordan curve} or a \textbf{Simple closed curve}. An arc defined in a complex plane or an Argand plane is called as a \textbf{contour}.  A \textbf{contour integral} is an integral which is defined as follows\\
+$$\int_\mathcal{C} f(z)\mathrm{d}z = \int_a^b f[z(t)]z\rq{}(t)\mathrm{d}t$$
+where a and b are any two points on the Jordan arc / contour where we are performing our integration. This is called as \textbf{parametric integration}. Although, this is a standard procedure, we will be using some specialized theorems to reduce this problem to an easier level. The next theorem enables an approximation scheme for integrals
+\begin{description}
+\item[Upper Bound Theorem] \hfill \\
+	If $f(z)$ is any complex function over any given contour $\mathcal{C}$, and if the function reaches its supremum $\mathcal{M}$ over the contour and the length of the contour is $L$, then the following inequality holds
+	$$\int_\mathcal{C} f(z)\mathrm{d}z \leq \mathcal{M}L$$
+
+\end{description}
+
+\subsection{Cauchy\rq{}s Theorem and Goursat Correction}
+The Cauchy theorem is another celebrated result in analysis, which was later corrected by Goursat and is now called as the Cauchy-Goursat theorem. The proof is quite lengthy but the statement is very simple. 
+Let $f$ be an analytic function with the domain as the region inside and on a Jordan curve 
+$\mathcal{C}$. Then, the following identity holds
+$$\int_\mathcal{C} f(z)\mathrm{d}z = 0$$
+
+This theorem is very important and very useful in proving certain identities. Say we had two functions $f$ and $g$ of z over the same contour $\mathcal{C}$ and we wanted to check whether their contour integrals are the same or not, in this case if $f-g$ is analytic on $\mathcal{C}$ it is enough, we need not even know the piecewise analyticity of $f$ and $g$.
+
+Another important corollary of the theorem follows
+\begin{description}
+\item[Deformation Principle] \hfill \\
+	This theorem states that if there is a function analytic on and inside a Jordan curve $\mathcal{C}$ and that there is another curve $\mathcal{L}$ such that $\mathcal{C} \subseteq \mathcal{L}$ then we can say that the value of the contour integral will be the same over both the contours(and equal zero, but the deformation over here must be noted). Hence, given any complex contour we are given to evaluate, we can always choose a simpler sub-contour inside provided the function is analytic in both domains.
+\item[Goursat\rq{}s correction] \hfill \\
+	Up to now, whatever integral theorems we have seen all depend on the point of analyticity. However, Goursat proved that analyticity is not a neccesary condition for the existence of Cauchy\rq{}s theorem, it is enough if the function is continuous in and on the contour. Hence, whatever theorems that are stated and will be stated involving analyticity and integration, we can replace it with continuity as the neccesary clause.
+\item[Simply and Multiply connected domains] \hfill \\
+	This forms the basis of the aforementioned Deformation principle. In general, a simply connected domain is one in which there are no \lq\lq{}holes\rq\rq{} or any sort of, to be more precise, any two points can be joined by a curve lying completely inside the domain. Multiply connected domains have the aforementioned negated features. The fact that the Cauchy theorem holds true in both the types of domains helps proving the deformation principle.
+\end{description}
+\subsection{Cauchy Integral Formula}
+We shall now discover the fact that it is common for analytic functions to be \textbf{infinitely smooth}. This facet, which is most missed in real analysis, is a direct consequence of the Cauchy theorem and the following formula which we now state
+\begin{description}
+\item[Cauchy integration principle] \hfill \\
+	Let $f$ be analytic everywhere inside and on a closed contour $\mathcal{C}$ taken in the positive sense. If $z_{0}$ is any point interior to $\mathcal{C}$ then,
+	$$f(z_{0}) = \frac{1}{2\pi i}\int_\mathcal{C} \frac{f(z) \mathrm{d}z}{z - z_{0}}$$
+\item[Infinitely Smooth Functions] \hfill \\
+	This forms a corollary to the above theorem. If a function $$f(z) = u(x,y)+iv(x,y)$$ is defined and analytic at a point $z = (x,y)$ then the component functions $u,v$ have partial derivatives of all orders at that point.
+	$$f^n(z_{0}) = \frac{n!}{2\pi i} \int_\mathcal{C} \frac{f(s) \mathrm{d}s}{(s-z)^(n+1)}$$
+\item[Morera\rq{}s Theorem] \hfill \\
+	This theorem establishes the converse of Cauchy\rq{}s integral theorem. Let $f$ be a continuous function on a domain $\mathcal{D}$, if $$\int_\mathcal{C} f(z)\mathrm{d}z = 0$$ for \textbf{every closed contour} $\mathcal{C}$ in the domain $\mathcal{D}$ then, f is analytic throughout $\mathcal{D}$.
+\end{description}
+
+\subsection{Liouville\rq{}s Theorem and The Maximum Modulus Principle}
+To study the topic at hand, it would be more prudent to discuss the following auxiliary theorem or a lemma
+\begin{description}
+\item[Cauchy\rq{}s Inequality] \hfill \\
+Suppose that a function $f$ is analytic inside and on a positively oriented circle $\mathcal{C}_{R}$ centered at $z_{0}$ and with a radius of $R$. If $M_{R}$ denotes the maximum value of $|f(z)|$ on $C_{R}$, then
+$$|F^n(z_{0})| \leq \frac{n!\mathcal{M}_{R}}{R^n}$$\
+
+Using this inequaliyl and tending R to infinite i.e, potentially covering the entire plane,, we have \textbf{Liouville\rq{}s theorem}.
+
+\item[The Theorem] \hfill \\
+If $f$ is entire and bounded in the complex plane then, $f(z)$ must be a constant function throughout the plane.
+
+\item[Maximum Modulus Principle] \hfill \\
+
+\end{description}
+
+\end{sloppypar}
+\end{document}

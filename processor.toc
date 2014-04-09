@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}The Language: Testbenches}{3}
+\contentsline {section}{\numberline {3}The Components}{5}
+\contentsline {subsection}{\numberline {3.1}Multiplexor}{5}
+\contentsline {subsection}{\numberline {3.2}Adders and Subtractors: The basic Arithmetic Logic Unit}{7}
+\contentsline {subsection}{\numberline {3.3}Latches, Flip Flops and Registers: Sequential Digital Devices}{9}
+\contentsline {subsubsection}{\numberline {3.3.1}Latch}{10}
+\contentsline {subsubsection}{\numberline {3.3.2}Flip Flops}{12}
+\contentsline {subsubsection}{\numberline {3.3.3}Registers}{14}
+\contentsline {subsubsection}{\numberline {3.3.4}Register Files}{15}
+\contentsline {subsection}{\numberline {3.4}Arithmetic Logic Unit: A mix of things}{20}
+\contentsline {subsection}{\numberline {3.5}Sign Extender/Zero Extender and Logical Left Shifter}{23}
+\contentsline {subsection}{\numberline {3.6}A few other useful Verilog scripts}{24}
+\contentsline {subsubsection}{\numberline {3.6.1}RegFile Module}{25}
+\contentsline {subsubsection}{\numberline {3.6.2}Stanford Standard Blocks 1}{27}
+\contentsline {subsubsection}{\numberline {3.6.3}Stanford Standard Blocks 2}{35}
