@@ -11,6 +11,8 @@
 \title{Theorems in Complex Analysis}
 \author{A cheat sheet for formulae \\Anurag Pallaprolu\\ BITS Pilani}
 \maketitle
+\tableofcontents
+\setcounter{tocdepth}{3}
 \section{Preliminary Definitions and Formalities}
 We shall start with the basics of the complex number field $\mathbb{C}$. The axiomatic definition follows from the fact that they are all ordered pairs of two reals plotted on the Argand diagram. To name a few standard field properties
 
@@ -199,8 +201,43 @@ There won\rq{}t be much of a discussion about series here. Just the two formulae
 \item[Taylor] \hfill \\
 	Let $f$ be any analytic function in a domain $\mathcal{D}$, then it can be expressed as a power series sum:
 $$f(z) = \sum_n^{\infty} a_{n}(z-z_{0})^n$$ where $a_{n}$ depend upon the functional derivatives of $f$ and are given by the old Cauchy formula:
-$$f^n(z_{0}) = \frac{n!}{2\pi i} \int_\mathcal{C} \frac{f(s) \mathrm{d}s}{(s-z)^(n+1)}$$
+$$a_{n} = \frac{f^n(z_{0})}{n!} = \frac{1}{2\pi i} \int_\mathcal{C} \frac{f(s) \mathrm{d}s}{(s-z)^{n+1}}$$ Here the contour $\mathcal{C}$ is to be chosen arbitrarily for the domain, keeping the deformation principle in mind.
+\item[Laurent] \hfill \\
+	Let $f$ be any function analytic on a annular domain $$\mathcal{R}_{1} \leq |z - z_{0}| \leq \mathcal{R}_{2}$$ This is done so as to separate the singularity at $z_{0}$ and to develop a Taylor series, with some negative exponent terms to account for these singularities. Hence $$f(z) = \sum_{n=0}^{\infty}a_{n}(z-z_{0})^n  +  \sum_{n=1}^{\infty}\frac{b_{n}}{(z-z_{0})^n}$$
+Where $$a_{n} = \frac{1}{2\pi i}\int_{\mathcal{C}}\frac{f(z)\mathrm{d}z}{(z-z_{0})^{n+1}}$$
+ $$b_{n} = \frac{1}{2\pi i}\int_{\mathcal{C}}\frac{f(z)\mathrm{d}z}{(z-z_{0})^{-n+1}}$$
+
 \end{description}
 
+\subsection{Classification of singularities}
+Based on the value of the negative exponent $n$ we can classify the types of singularities and what kinds of behaviorial predictions they can make regarding the function at hand. 
+\begin{description}
+\item[Isolated Singularity] \hfill \\
+	Here, the function is analytic in any $\delta$ interval around the singularity. Hence, these types of functions have a valid Laurent series representation around any contour indefinitely close to the point. This ends the analysis and nothing conclusive can be said about $n$, the most we can say is that $n \leq 1$.
+\item[Simple Pole] \hfill \\
+	Here, the function is not analytic at a point and there might be other singularities around. It is called a \textbf{Simple} pole because it contributes only upto the $\frac{1}{z-z_{0}}$ term of the Laurent series and no more. These types of poles are used to evaluate \textbf{residues} of the complex functions, a technique which will yield a very good way to evaluate integrals. Anyway, more on this later. Moral of the story: $n = 1$.
+\item[Multiple Pole] \hfill \\
+	Nothing much to say. $n \leq 1$ and $n > -\infty$.
+\item[Essential Singularity] \hfill \\
+	The concept of essential singularity is quite simple. If for a funciton $f$, there exists a singularity which is a pole of order a very large number $\mathcal{N} \to \infty$ then we can say that the singularity is an essential or an \textbf{irremovable} singularity as it extends upto negative infinity. 
+\end{description}
+
+\section{Residue Theorem}
+We come to another important theorem in complex analysis. This is an almost sure shot technique to evaluate complex integrals, most suitably in \textbf{non analytic} regions. Jackpot! The motivation of such a theorem will be introduced here. Note the term of the Laurent series of a function $f$ which relates to the $\frac{1}{z-z_{0}}$. Also recall
+$$b_{n} = \frac{1}{2\pi i}\int_{\mathcal{C}}\frac{f(z)\mathrm{d}z}{(z-z_{0})^{-n+1}}$$
+Putting $n=1$ and rearranging terms,
+$$\int_{\mathcal{C}}f(z)\mathrm{d}z = 2\pi ib_{1}$$
+
+$Voila!$ Now, the power of this simple substitution is apparent. We can now just expand the integrand in its Laurent series, pick up the coefficient $b_{1}$ and multiply it with $2\pi i$ and the answer has presented itself. However, issues start to arise in the step of expanding into a Laurent series. A simple standard function can be expanded easily. But, we shall develop techniques of extracting the residue( by the way if you are wondering what a residue is, it is $b_{0}$).
+
+To be slightly rigorous, presenting \textbf{Cauchy\rq{}s residue theorem}.
+\begin{description}
+\item[Theorem] \hfill \\
+	Let $\mathcal{C}$ be a simple closed contour, described in the positive sense. If a function $f$ is analytic inside and on $\mathcal{C}$ except for a finite number of singular points $z_{k}(k=1,2,..n)$ inside $\mathcal{C}$, then
+$$\int_{\mathcal{C}}f(z)\mathrm{d}z = 2\pi i\sum_{k=1}^{n}Res_{z=z_{k}}f(z)$$
+
+\item[Boas\rq{} Residue Modification] \hfill \\
+	Let $f$ be analytic everywhere in the finite plane except for a few singular points interior to $\mathcal{C}$
+\end{description}
 \end{sloppypar}
 \end{document}
