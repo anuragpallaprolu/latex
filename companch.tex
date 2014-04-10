@@ -13,6 +13,7 @@
 \maketitle
 \tableofcontents
 \setcounter{tocdepth}{3}
+\clearpage
 \section{Preliminary Definitions and Formalities}
 We shall start with the basics of the complex number field $\mathbb{C}$. The axiomatic definition follows from the fact that they are all ordered pairs of two reals plotted on the Argand diagram. To name a few standard field properties
 
@@ -237,7 +238,40 @@ To be slightly rigorous, presenting \textbf{Cauchy\rq{}s residue theorem}.
 $$\int_{\mathcal{C}}f(z)\mathrm{d}z = 2\pi i\sum_{k=1}^{n}Res_{z=z_{k}}f(z)$$
 
 \item[Boas\rq{} Residue Modification] \hfill \\
-	Let $f$ be analytic everywhere in the finite plane except for a few singular points interior to $\mathcal{C}$
+	Let $f$ be analytic everywhere in the finite plane except for a few singular points interior to $\mathcal{C}$. Then,
+$$\int_{\mathcal{C}}f(z)\mathrm{d}z = 2\pi i Res_{z=0}[\frac{f(1/z)}{z^2}]$$
+
+\item[Polar Residues] \hfill \\
+	This technique is used to evaluate residues at singularities which are simple or multiple poles. Let $f(z)$ be the function under question and let $z_{0}$ be a pole of order $n$. Then, we can always write $$f(z) = \frac{\phi(z)}{(z-z_{0})^n}$$ Then there arise two cases depending on whether the pole is simple or not:
+	$$Res_{z=z_{0}}f(z) = \phi(z_{0})$$ if $z_{0}$ is a simple pole.
+	$$Res_{z=z_{0}}f(z) = \frac{\phi^{n-1}(z_{0})}{(n-1)!}$$ otherwise.
+
+\item[Residue evaluation of rational polynomials] \hfill \\
+	Let two functions $p$ and $q$ be analytic at a point $z_{0}$. If $p(z_{0}) \neq 0$ and $q(z_{0}) = 0$ and $q\rq{}(z_{0}) \neq 0$ then $z_{0}$ is a simple pole of the rational function $r(z) = \frac{p(z)}{q(z)}$ and 
+$$Res_{z=z_{0}}\frac{p(z)}{q(z)} = \frac{p(z_{0})}{q\rq{}(z_{0})}$$
+
 \end{description}
+
+\section{Improper Integrals and Miscellaneous Theorems}
+
+In this last section of the document, we shall deal with the evaluation of improper integrals and also we shall state a few miscellaneous useful theorems related to evaluating such integrals and their corresponding residues. 
+
+\subsection{Evaluation of Improper Integrals by Residue Theorem}
+When we say improper integrals, we always mean the \textbf{Cauchy principal value} of the integral evaluated as the upper and lower limits tend to $\infty$ and $-\infty$ respectively. This, in contrast with the other definition of improper integrals, \textbf{the converging partial sum picture}, is not what is going to be discussed here. Let $f(x)$ be a function of a real variable $x$ and let it be a rational function. Now, we are supposed to evaluate $\int_-\infty^{\infty} f(x)dx$. We switch to the Argand plane in which we consider $f(z) = \frac{p(z)}{q(z)}$. Now, consider only the roots of $q(z)$ that are above the x axis, and take the contour as a semicircle $\mathcal{C}_\rho$ and take $\rho$ large enough to enclose all the roots. Now, splitting the path into two parts, one the semicircle and the other, the diameter which lies on the x axis, the entire integral can be split into:
+$$\int_{-\rho}^{\rho}f(x)dx + \int_{\mathcal{C}_{\rho}}f(z)dz  = 2\pi i\sum_{k=1}^{n}Res_{z=z_{k}}f(z)$$
+$$\int_{-\rho}^{\rho}f(x)dx   = 2\pi i\sum_{k=1}^{n}Res_{z=z_{k}}f(z) -  \int_{\mathcal{C}_{\rho}}f(z)dz$$
+If we can prove that $$\lim_{\rho\to\infty}\int_{\mathcal{C}_{\rho}}f(z)dz = 0$$, then we have essentially evaluated the principal value which we are looking for. To prove that it tends to zero, we have to use the modulus inequality mentioned before and physically show that the \textbf{limit of the upper bound itself is zero} as $\rho$ tends to zero.
+
+\subsection{Jordan\rq{}s Inequality}
+This inequality will be useful when proving such aforementioned limits tending to zero type identities. The inequality itself is a standard one proven by analysis 
+$$\int_{0}^{\pi} \exp(-R\sin\theta) < \frac{\pi}{R}$$ The actual lemma which was originally stated by Jordan is the following. if $f$ is analytic over the semicircle mentioned before and is bounded by some number $\mathcal{M}_{R}$ and if this number tends to zero as R goes to infinity, then for every $a\geq 0$ we have 
+$$\lim_{R \to \infty} \int_{\mathcal{C}_{R}} f(z)exp(iaz)dz = 0$$
+
+This is useful in establishing the limiting identity in cases where the integrand involved is a sinusoid. More specifically, if the integrand is a Fourier component, then Jordan\rq{}s lemma comes to the rescue.
+
+\subsection{Argument principle and Rouche\rq{}s Theorem}
+We shall deal with \textbf{meromorphic} functions from now on. A function is said to be meromorphic in some domain $\mathcal{D}$ if its singularities consist of poles and only poles. Now, let $f$ be such a meromorphic function and let it traverse a closed Jordan curve $\mathcal{C}$ .  Let it be meromorphic inside the contour, and let it be analytic and nonzero on the contour. Even counting \textbf{multiplicities}. Then, the difference in the argument of $f$ as it traverses one revolution in the contour is a multiple of the difference between the number of zeroes and the number of poles. Mathematically
+$$\frac{1}{2\pi}\Delta_{\mathcal{C}} arg f(z) = Z-P$$
+This is the famous argument principle. The last theorem of this article concerns with Rouche\rq{}s theorem. The statement: Let $f$ and $g$ be two analytic functions, analytic inside and on a closed contour $\mathcal{C}$. Also let $|f(z)|>|g(z)|$ at each point on $\mathcal{C}$. Then both $f$ and $f+g$\textbf{ have the same number of zeroes, including multiplicities, inside $\mathcal{C}$}.
 \end{sloppypar}
 \end{document}

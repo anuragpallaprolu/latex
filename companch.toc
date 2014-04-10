@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Preliminary Definitions and Formalities}{2}
+\contentsline {section}{\numberline {2}Analytic Functions}{3}
+\contentsline {subsection}{\numberline {2.1}Limits and continuity}{3}
+\contentsline {subsection}{\numberline {2.2}Derivatives and Analytic Property}{4}
+\contentsline {section}{\numberline {3}Integrals of Complex Functions}{6}
+\contentsline {subsection}{\numberline {3.1}Contour Integration and the Modulus Upper Bound theorem}{6}
+\contentsline {subsection}{\numberline {3.2}Cauchy'{}s Theorem and Goursat Correction}{7}
+\contentsline {subsection}{\numberline {3.3}Cauchy Integral Formula}{8}
+\contentsline {subsection}{\numberline {3.4}Liouville'{}s Theorem and The Maximum Modulus Principle}{9}
+\contentsline {section}{\numberline {4}Taylor and Laurent Series}{10}
+\contentsline {subsection}{\numberline {4.1}Classification of singularities}{11}
+\contentsline {section}{\numberline {5}Residue Theorem}{12}
+\contentsline {section}{\numberline {6}Improper Integrals and Miscellaneous Theorems}{13}
+\contentsline {subsection}{\numberline {6.1}Evaluation of Improper Integrals by Residue Theorem}{13}
+\contentsline {subsection}{\numberline {6.2}Jordan'{}s Inequality}{14}
+\contentsline {subsection}{\numberline {6.3}Argument principle and Rouche'{}s Theorem}{15}
