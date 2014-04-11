@@ -3,19 +3,68 @@
 \usepackage{graphicsx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+% Palatino font (ppl must be installed).
+%\renewcommand*\rmdefault{ppl}
+% Iwona font (iwona must be installed).
+\renewcommand*\rmdefault{iwona}
 \begin{document}
 
 \title{Angular Momentum In Quantum Mechanics: A Survey}
 \author{Anurag Pallaprolu \\Physics and Electronics\\ BITS Pilani}
 \maketitle
 \begin{abstract}
-This article deals with the angular momentum viewpoint of quantum mechanics. It is a review of the chapters \textbf{Angular Momentum} in both Landau and Lifshitz as well as Devanathan. It also deals with a bit of central force theory and the discussion of the Hydrogen atom as an example of a Coulombic central force.
+This article deals with the angular momentum viewpoint of quantum mechanics. It is a review of the chapters \textbf{Angular Momentum} in both \textbf{Landau and Lifshitz} as well as \textbf{V. Devanathan}. It also deals with a bit of central force theory and the discussion of the Hydrogen atom as an example of a Coulombic central force.
 \end{abstract}
 \section*{Introduction}
-Any object moving under the influence of a central force exhibits certain characteristic properties. There are a few quantites that do not change when the object is undergoing motion here. Such quantities are called as \textbf{conserved quantities or conserved observables}. According to a standard theorem in classical mechanics known as \textbf{Noether's Theorem} any conservation law is due to some sort of a symmetry in the spacetime structure of the system. In much deeper physics, breaking of such symmetries is believed to create new particles/energy quanta. 
+Any object moving under the influence of a central force exhibits certain characteristic properties. There are a few quantites that do not change when the object is undergoing motion here. Such quantities are called as \textbf{conserved quantities or conserved observables}. According to a standard theorem in classical mechanics known as \textbf{Noether's Theorem}, any conservation law is due to some sort of a symmetry in the spacetime structure of the system. In much deeper physics, breaking of such symmetries is believed to create new particles/energy quanta. 
 
 According to Noether's theorem, simply put, any symmetric coordinate or a variable leads to the conservation of its \textbf{canonically conjugate} coordinate or variable. In the case of linear momentum, it is due to the symmetries existant in the x, y and z directions that usually leads to the conservation of momentum in the respective direction. This property of a physical system is called as the \textbf{homogenity of space}. Similarly, in the case of angular momentum, if any angular coordinate shows some symmetry, perhaps the spherical symmetry of the central force field, then the angular momentum is said to be conserved due to the \textbf{isotropy of space.}
 \section{Angular Momentum Operator}
 Consider any infinitesimal change in a vector, the change being the vector is rotated by an angle of $\delta\phi$ in some plane. The new vector is then given by the simple cross product rule $$\delta\vect{r_{a}} = \vectcrossvect{\delta\vect{\phi}}{\vect{r_{a}}}$$. Now, when such a change in the coordinate is made, then there is a corresponding change in the value of any function $\psi$ represented. This change, if it can be brought about by a unitary operator, then that is our required answer. $$\psi (\vect{r_{i}}+\delta\vect{r_{i}}) = \psi(r_{i}) + \sum_j \delta\vectdotvect{\vect{r_{j}}}{\gradient_{j}\psi}$$
-But as we know $\vect{r_{i}}$ representation with a change of angle of $\delta\vect{\phi}$
+But as we know $\vect{r_{i}}$ representation with a change of angle of $\delta\vect{\phi}$ as seen before was, $\vectcrossvect{\delta\vect{\phi}}{\vect{r_{a}}}$. Hence, the above expression changes as:	
+$$\psi (\vect{r_{i}}+\delta\vect{r_{i}}) = \psi(r_{i}) + \sum_j \vectcrossvect{\delta\vect{\phi}}{\vectdotvect{\vect{r}_{a}}{\gradient_{j}\psi}}$$
+$$=(1+\vectdotvect{\delta\vect{\phi}}{\sum_j \vectcrossvect{\vect{r}_{a}}{\gradient_{j}}})\psi(\vect{r}_1,\vect{r}_2,...)$$. The operator $=(1+\vectdotvect{\delta\vect{\phi}}{\sum_j \vectcrossvect{\vect{r}_{a}}{\gradient_{j}}})$ can be seen as an infinitesimal generator of rotation in space and it is also clearly seen that $$(\sum_j\vectcrossvect{\vect{r}_j}{\gradient_j})\mathcal{H}-\mathcal{H}(\sum_j\vectcrossvect{\vect{r}_j}{\gradient_j}) = 0$$ Here $\mathcal{H}$ is defined to be the \textbf{hamiltonian} of the system. This commutation rule conserves the canonically conjugate quantity to infinitesimal angular motion, that is, the angular momentum in the direction \textbf{perpendicular to the plane of rotation.} Now, it is clear that, then $\vectcrossvect{\vect{r}_j}{\gradient_j}$ is the basic component of an angular momentum operator. This can also be seen as taking the quantum mechanical analog of the linear momentum operator and taking a cross product with $\vect{r}$. Hence, we have $$\vect{L} = \vectcrossvect{\vect{r}}{\vect{p}}$$ $$\vect{L} = \vectcrossvect{\vect{r}}{-i\hbar\gradient}$$. Therefore, we can now construct the values of $L_x, L_y, L_z$ from the given vector equation above. This is quite simply
+$$L_x = yp_z - zp_y; L_y = zp_x - xp_z; L_z = xp_y - yp_x$$
+$$L_i = x_j\pbyp{}{x_k} - x_k\pbyp{}{x_j}$$ is the most general version of the formulation of the angular momentum operator.
+
+\section{Commutators and Properties}
+Before discussing about commutators, we must first look at an important property of the \textbf{expectation} value of the angular momentum vector in quantum mechanics. Clearly by the expectation value, we can use the formula 
+$$\vect{\textbf{L}} = -i\hbar\Integral{\psi^*(\vectcrossvect{\vect{r}_j}{\gradient_j})\psi}{q}$$ Note that from the physical definition of expectation value, it is a statistical \textbf{measure of average} and hence must be real. But on the left hand side, it is clearly visible that the integral is a Hilbert Schmidt inner product and is real, with an imaginary factor in front. Hence, the left side is purely imaginary. This can be possible iff both sides are zero. Hence, \textbf{\vect{L} has an expectation value of zero}. 
+
+Now, let us look at the commutation properties. It can be verified by taking test functions and proving that:
+$$[L_i, L_j] = i\hbar\epsilon_{ijk}L_k$$ where $\epsilon_{ijk}$ is the Levi Civita symbol or the \textbf{the completely antisymmetric tensor of dimension 3}. This explains the \textbf{Heisenberg uncertainity} which is present in the angular momentum observables, i.e, \textbf{no two $L_i, L_j$ can have simultaneous eigenvectors}, except in cases where in all three simultaneously vanish, but then there would be no point talking about angular momentum. Similar commutation rules can be verified:
+$$[L_i,q_j] = i\hbar\epsilon_{ijk}q_k$$
+$$[L_i,p_j] = i\hbar\epsilon_{ijk}p_k$$
+There is however, the square of the angular momentum observable i.e, \textbf{$\vect{L}^2$}. This quantity is special as it commutes with each of its components and hence, the two sets ${L_x,L_y,L_z}$ and \textbf{$\vect{L}^2$} can have parallel eigenvectors. Mathematically stating this $$[\vect{L}^2, L_i] = 0$$
+
+\subsection{Ladder Operators}
+We shall now look at some interesting combinations of the angular momentum directional components. One such linear combination pair is the ladder operator pair. These are also sometimes called \textbf{raising and lowering} operators. The reasons for such terminology will be explained shortly. The operators are
+$$L_+ = L_x + iL_y$$
+$$L_-  = L_x - iL_y$$
+
+Also note the startling commutation relations given here. Note that, if you think hard enough, you might just understand why they are called ladder operators from the commutation rules itself(Hint: think of the quantum \textbf{harmonic oscillator}). 
+$$[L_+, L_-] = 2L_z$$
+$$[L_z, L_+] = L_+$$
+$$[L_z, L_-] = -L_-$$
+ 
+Let us switch from the cartesian representation of $L_x, L_y$ to the polar coordinates($x=r\sin\theta\cos\phi$ etc.), after switching it can be verified that, the new angular momentum observables are given by:
+$$L_z = -i\hbar\pbyp{}{\phi}$$
+$$L_+ = \hbar e^{i\phi}(\pbyp{}{\theta} + i\cot\theta\pbyp{}{\phi})$$
+$$L_- = \hbar e^{-i\phi}(-\pbyp{}{\theta} + i\cot\theta\pbyp{}{\phi})$$
+
+Notice the exactness of \textbf{$\vect{L}^2$} and the \textbf{angular part of the Laplacian expressed in spherical coordinates}. This fact will also be impressed upon when we talk about Hydrogen atom and the Schrodinger equation there. If you can't wait, then here's the news, the eigenfunctions of the squared angular momentum operator are the \textbf{spherical harmonic} wavefunctions of the Hydrogen atom. The other variable separable solution is the radial equation which gives the radial wavefunction of the atom. The Laplacian is present in the Schrodinger's equation in three dimensions, to link all of the facts up.
+
+\section{Finding out the $\phi$ based eigenvalues}
+Now, we shall look towards working out the eigenvalues for the $L_z$ observable. The form of the observable in spherical polar coordinates is given in the previous section.Before, this, we shall mention a convention as to set $\hbar = 1$ in our calculations henceforth, as it is just a constant and dimensionalysis should set it right. Now, we have to solve $$L_z\psi = m\psi$$ $$-i\hbar\pbyp{\psi}{\phi} = m\psi$$ The last differential equation has a very starighforward solution, and after normalising, the answer turns out to be 
+$$\psi(\phi) = \frac{e^{\pm im\phi}}{\sqrt {2\pi}}$$
+ 
+The number $m$ here must be determined. The simplest method is to look at the normalization condition again. It goes like $$\int_0^{2\pi} \Phi_m^*(\phi)\Phi_{m'}(\phi) d\phi = \delta_{mm'}$$. Now, it must be clear that $m$ should be an integer to assign a valid normalization procedure for the given quantum system. It need not neccesarily be a positive integer as the exponent in the function has a $\pm$ symblol to it(as we shall see it can take both positive and negative integers, and if you are wondering, then yes, it is the same old \textbf{magnetic quantum number} that we are talking about here). Hence, both $\pm m$ are valid for the eigenfunction. Infact, the main point to be noted here is that, \textbf{if there exist stationary states with different values of $m$, then they need not neccesarily have different energies. Degenaracy is confirmed from the heuristic that the direction of z-axis is no way unique and hence, we can have states with the same energies whose z axes point in different directions}.
+
+Getting back to the ladder operators, let us see what happens when we operate any one of $L_{\pm}$ on the state $\psi_m$. By definition $$L_z\psi_m = m\psi_m$$ But we know that $$[L_z, L_{\pm}] = \pm L_{\pm}$$ Hence,
+$$L_zL_{\pm} - L_{\pm}L_z = \pm L_{\pm}$$
+$$(L_zL_{\pm} \mp L_{\pm})\psi_m = L_{\pm}L_z\psi_m$$ 
+$$(L_zL_{\pm} \mp L_{\pm})\psi_m = mL_{\pm}\psi_m$$
+$$(L_zL_{\pm})\psi_m  = mL_{\pm}\psi_m\pm L_{\pm}\psi_m$$
+$$(L_zL_{\pm})\psi_m = (m \pm 1)L_{\pm}\psi_m$$
+This should show us that, the action of $L_{\pm}$ is to raise and lower the eigenvalue of $\psi_m$ by one $\hbar$ unit to be precise.
 \end{document}
