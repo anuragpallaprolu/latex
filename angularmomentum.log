@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.12)  11 APR 2014 14:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.12)  12 APR 2014 08:06
 entering extended mode
 **angularmomentum.tex
 (C:\Users\anurag\Desktop\VERILOG-Paper\angularmomentum.tex
@@ -964,7 +964,8 @@ mandi: square root symbol fixed.
 . 
 . Defining document command \colvector with arg. spec. 'O{,}m' on line 842.
 .................................................
-) (C:\Users\anurag\Desktop\VERILOG-Paper\graphicsx.sty
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\braket\braket.sty")
+(C:\Users\anurag\Desktop\VERILOG-Paper\graphicsx.sty
 
 LaTeX Warning: You have requested package `graphicsx',
                but the package provides `graphicx'.
@@ -973,30 +974,29 @@ Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen197
 \Gin@req@width=\dimen198
 ) (C:\Users\anurag\Desktop\VERILOG-Paper\angularmomentum.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Try loading font information for T1+iwona on input line 10.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 11.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\iwona\t1iwona.fd"
-File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1015,52 +1015,76 @@ File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
 \c@lstlisting=\count173
 \AtBeginShipoutBox=\box62
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 15.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 14.
+LaTeX Font Info:    Try loading font information for U+msb on input line 15.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/iwona/b/n' tried instead on input line 15.
-LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/iwona/b/n' tried instead on input line 18.
-LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <12> not available
-(Font)              Font shape `T1/iwona/b/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 19.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 20.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
-LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/iwona/b/n' tried instead on input line 40.
- [4] [5] [6]
-(C:\Users\anurag\Desktop\VERILOG-Paper\angularmomentum.aux) ) 
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 41.
+
+Overfull \hbox (2.01152pt too wide) in paragraph at lines 46--47
+\T1/ppl/m/n/12 lad-der op-er-a-tors from the com-mu-ta-tion rules it-self(Hint:
+ think of the quan-
+ []
+
+[4] [5] [6] [7] [8]
+Overfull \hbox (8.47417pt too wide) in paragraph at lines 106--106
+[]\T1/ppl/b/n/17.28 Matrix Me-chan-i-cal For-mu-la-tion of An-gu-lar Mo-
+ []
+
+
+Overfull \hbox (19.8446pt too wide) in paragraph at lines 107--108
+\T1/ppl/m/n/12 quan-tum me-chan-ics. Till now, we were us-ing \T1/ppl/b/n/12 wa
+ve me-chan-ics \T1/ppl/m/n/12 or \T1/ppl/b/n/12 Schrodinger
+ []
+
+
+Overfull \hbox (25.68799pt too wide) in paragraph at lines 107--108
+\T1/ppl/b/n/12 for-mal-ism or pic-ture \T1/ppl/m/n/12 of quan-tum me-chan-ics w
+hich de-pended on Schrodinger's
+ []
+
+[9] [10] (C:\Users\anurag\Desktop\VERILOG-Paper\angularmomentum.aux) ) 
 Here is how much of TeX's memory you used:
- 23507 strings out of 493921
- 446045 string characters out of 3147279
- 489923 words of memory out of 3000000
- 26359 multiletter control sequences out of 15000+200000
- 60106 words of font info for 76 fonts, out of 3000000 for 9000
+ 23477 strings out of 493921
+ 445380 string characters out of 3147279
+ 490046 words of memory out of 3000000
+ 26317 multiletter control sequences out of 15000+200000
+ 33910 words of font info for 84 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 87i,12n,80p,10475b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/
-MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc}<C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/nowacki/iwona/iwonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/nowacki/iwona/iwonar.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb>
-Output written on angularmomentum.pdf (6 pages, 154815 bytes).
+ 87i,12n,80p,10472b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Progr
+am Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/
+uplr8a.pfb>
+Output written on angularmomentum.pdf (10 pages, 182177 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

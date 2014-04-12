@@ -1,12 +1,13 @@
 \documentclass[12pt]{article}
 \usepackage{mandi}
+\usepackage{braket}
 \usepackage{graphicsx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 % Palatino font (ppl must be installed).
-%\renewcommand*\rmdefault{ppl}
+\renewcommand*\rmdefault{ppl}
 % Iwona font (iwona must be installed).
-\renewcommand*\rmdefault{iwona}
+%\renewcommand*\rmdefault{iwona}
 \begin{document}
 
 \title{Angular Momentum In Quantum Mechanics: A Survey}
@@ -25,11 +26,11 @@ But as we know $\vect{r_{i}}$ representation with a change of angle of $\delta\v
 $$\psi (\vect{r_{i}}+\delta\vect{r_{i}}) = \psi(r_{i}) + \sum_j \vectcrossvect{\delta\vect{\phi}}{\vectdotvect{\vect{r}_{a}}{\gradient_{j}\psi}}$$
 $$=(1+\vectdotvect{\delta\vect{\phi}}{\sum_j \vectcrossvect{\vect{r}_{a}}{\gradient_{j}}})\psi(\vect{r}_1,\vect{r}_2,...)$$. The operator $=(1+\vectdotvect{\delta\vect{\phi}}{\sum_j \vectcrossvect{\vect{r}_{a}}{\gradient_{j}}})$ can be seen as an infinitesimal generator of rotation in space and it is also clearly seen that $$(\sum_j\vectcrossvect{\vect{r}_j}{\gradient_j})\mathcal{H}-\mathcal{H}(\sum_j\vectcrossvect{\vect{r}_j}{\gradient_j}) = 0$$ Here $\mathcal{H}$ is defined to be the \textbf{hamiltonian} of the system. This commutation rule conserves the canonically conjugate quantity to infinitesimal angular motion, that is, the angular momentum in the direction \textbf{perpendicular to the plane of rotation.} Now, it is clear that, then $\vectcrossvect{\vect{r}_j}{\gradient_j}$ is the basic component of an angular momentum operator. This can also be seen as taking the quantum mechanical analog of the linear momentum operator and taking a cross product with $\vect{r}$. Hence, we have $$\vect{L} = \vectcrossvect{\vect{r}}{\vect{p}}$$ $$\vect{L} = \vectcrossvect{\vect{r}}{-i\hbar\gradient}$$. Therefore, we can now construct the values of $L_x, L_y, L_z$ from the given vector equation above. This is quite simply
 $$L_x = yp_z - zp_y; L_y = zp_x - xp_z; L_z = xp_y - yp_x$$
-$$L_i = x_j\pbyp{}{x_k} - x_k\pbyp{}{x_j}$$ is the most general version of the formulation of the angular momentum operator.
+$$L_i = -i\hbar(x_j\pbyp{}{x_k} - x_k\pbyp{}{x_j})$$ is the most general version of the formulation of the angular momentum operator.
 
 \section{Commutators and Properties}
 Before discussing about commutators, we must first look at an important property of the \textbf{expectation} value of the angular momentum vector in quantum mechanics. Clearly by the expectation value, we can use the formula 
-$$\vect{\textbf{L}} = -i\hbar\Integral{\psi^*(\vectcrossvect{\vect{r}_j}{\gradient_j})\psi}{q}$$ Note that from the physical definition of expectation value, it is a statistical \textbf{measure of average} and hence must be real. But on the left hand side, it is clearly visible that the integral is a Hilbert Schmidt inner product and is real, with an imaginary factor in front. Hence, the left side is purely imaginary. This can be possible iff both sides are zero. Hence, \textbf{\vect{L} has an expectation value of zero}. 
+$$\vect{\textbf{L}} = -i\hbar\Integral{\psi^*(\vectcrossvect{\vect{r}_j}{\gradient_j})\psi}{q}$$ Note that from the physical definition of expectation value, it is a statistical \textbf{measure of average} and hence must be real. But on the right hand side, it is clearly visible that the integral is a Hilbert Schmidt inner product and is real, with an imaginary factor in front. Hence, the left side is purely imaginary. This can be possible iff both sides are zero. Hence, \textbf{\vect{L} has an expectation value of zero}. 
 
 Now, let us look at the commutation properties. It can be verified by taking test functions and proving that:
 $$[L_i, L_j] = i\hbar\epsilon_{ijk}L_k$$ where $\epsilon_{ijk}$ is the Levi Civita symbol or the \textbf{the completely antisymmetric tensor of dimension 3}. This explains the \textbf{Heisenberg uncertainity} which is present in the angular momentum observables, i.e, \textbf{no two $L_i, L_j$ can have simultaneous eigenvectors}, except in cases where in all three simultaneously vanish, but then there would be no point talking about angular momentum. Similar commutation rules can be verified:
@@ -66,5 +67,53 @@ $$(L_zL_{\pm} \mp L_{\pm})\psi_m = L_{\pm}L_z\psi_m$$
 $$(L_zL_{\pm} \mp L_{\pm})\psi_m = mL_{\pm}\psi_m$$
 $$(L_zL_{\pm})\psi_m  = mL_{\pm}\psi_m\pm L_{\pm}\psi_m$$
 $$(L_zL_{\pm})\psi_m = (m \pm 1)L_{\pm}\psi_m$$
-This should show us that, the action of $L_{\pm}$ is to raise and lower the eigenvalue of $\psi_m$ by one $\hbar$ unit to be precise.
+This should show us that, the action of $L_{\pm}$ is to raise and lower the eigenvalue of $\psi_m$ by one $\hbar$ unit and to make the shift of the state $$\psi_m \to \psi_{m \pm 1}$$ Hence, put more succintly, $$L_{\pm}\psi_m = (m \pm 1)\psi_{m+1}$$
+
+\begin{description}
+\item[A standard theorem] \hfill \\
+	This theorem is regarding the $m$ degeneracy of the states $\psi_{lm}$. As we have emphasized before, the states with differing values of $m$ need not have different energies. Infact, there always exist degenerate states, and this is assured by this theorem. \textbf{Given a Hilbert Space $\mathbb{H}$, if there exist two or more conserved quantities whose operators do not commute, then there always exist levels that are degenerate.} 
+\end{description}
+We have so far discussed the eigenvalues of $L_z$ only and have seen that there exist degenerate states $\psi_m$. But are there any bounds for $m$? To answer this question, we must first discover the eigenvalues of the remaining angular momentum observables. This has been discussed very well in the book by Prof. \textbf{Devanathan}. Consider the following:
+$$(L_x^2 + L_y^2)\psi_{lm} = (L^2 - m^2)\hbar^2 \psi_{lm}$$
+Let us assume, for the sake of discussion, the eigenvalues of \textbf{$\vect{L}^2$} to be some $\eta_l$. Then,
+$$ (L^2 - m^2)\hbar^2 \psi_{lm} = (\eta_l - m^2)\hbar^2\psi_{lm}$$
+Now the argument goes like this. Since, both $L_x, L_y$ are hermitian, the eigenvalues of the observable represented by the sum of their squares have to be positive. This implies that $\eta_j - m^2 \geq 0$. This should explain the existance of upper and lower bounds. It has already been discussed before that $m$ must take integer values.
+
+$$m = m_1, m_1 + 1, m_1 + 2, ........, m_2 - 1,m_2$$.
+This then should imply that, there cannot exist a state above $m_2$ and below $m_1$. Hence $$L_-\psi_{jm_1} = 0; L_+\psi{jm_2} = 0$$
+$$L_+L_-\psi_{lm_1} = 0; L_-L_+\psi_{lm_2}=0$$
+Now from the definitions, we can see,
+
+$$L_+L_- = L^2 - L_z(L_z - \hbar)$$
+$$L_-L_+ = L^2 - L_z(L_z +\hbar)$$
+
+These should help realise the following expressions below,
+$$\eta_l = m_1(m_1-1)$$
+$$\eta_l = m_2(m_2+1)$$
+The equality that follows ensues the fact $$m_1 = -m_2 = l$$ Now its simple, the eigenvalues of \textbf{$\vect{L}^2$} are nothing but $\eta_l = l(l+1)\hbar^2$ and the values of $m$ range from $-l$ to $l$ through 0, i.e., a total of $2l+1$ values.
+
+\section{Finding out the $\theta$ based eigenvalues}
+So far, we have seen how to derive the azimuthal wavefunction based on angular momentum considerations. Now, we shall solve for the wavefunction related to $\theta$ coordinate. The procedure is again, very innovative, as described by \textbf{Landau and Lifshitz}. Let us define a combined wavefunction for both $\theta$ and $\phi$ $$Y_{lm} = \Phi(\phi)\Theta(\theta)$$ Now, as we have discussed before, there are bounds on the number $m$, the maximum being $l$. This implies $$L_+Y_{ll} = 0$$ Using the spherical polar coordinate representation of the $L_+$ operator and also we know $\Phi(\phi) = \frac{e^{\pm im\phi}}{\sqrt {2\pi}}$ This can all be condensed to 
+$$L_+Y_{ll} = L_+(\frac{e^{\pm im\phi}}{\sqrt {2\pi}}) = 0$$
+$$\dbyd{\Theta_{ll}}{\theta} - l\cot{\theta}\Theta_{ll} = 0$$
+
+This is a standard equation, whose solution can be seen as $\Theta_{ll} = \lambda\sin^l\theta$ where $\lambda$ is a constant, function of $l$ which is to be determined by normalization. The normalization condition is 
+$$\int_0^\pi |\Theta_{lm}|^2\sin\theta d\theta = 1$$
+Now we have to derive the value of $\Theta_{lm}$ from $\Theta_{ll}$. Using the equation $$L_-Y_{l,m+1} = (L_-)_{m,m+1}Y_{lm} = \sqrt{(l-m)(l+m+1)}Y_{lm}$$,we can achieve the required conversion by its repeated application.
+The final answer shall be stated
+$$\Theta_{lm}(\theta) = (-i)^l\sqrt{\frac{(2l+1)(l+m)!}{2(l-m)!}}\frac{1}{2^ll!\sin^m\theta}\frac{d^{l-m}}{d(cos\theta)^{l-m}}sin^2l\theta$$
+
+\section{Matrix Mechanical Formulation of Angular Momentum}
+We shall now discuss about another formulation of angular momentum in quantum mechanics. Till now, we were using \textbf{wave mechanics} or \textbf{Schrodinger formalism or picture} of quantum mechanics which depended on Schrodinger's equation as the basic equation of motion and used ideas such as normalization and Born Interpretation to establish factors related to the wavefunction. Now, we move on to the \textbf{Heisenberg-Jordan-Kramers} picture or simply Matrix Mechanics. In this picture, the representation is as follows
+$$L^2\Ket{l,m} = l(l+1)\hbar^2\Ket{l,m};  L_z\Ket{l,m} = m\hbar\Ket{l,m}$$
+Now from basic braket calculus, we know that, for any observable $A$ in some state $\psi_j$, the matrix elements for the linear transformation is given by
+$$\Bra{\psi_i}A\Ket{\psi_j} = A_{ij}$$ Hence,
+$$\Bra{l',m'}L^2\Ket{l,m} = l(l+1)\hbar^2\delta_{ll'}\delta_{mm'}$$
+$$\Bra{l',m'}L_z\Ket{l,m} = m\hbar^2\delta_{ll'}\delta_{mm'}$$
+
+Let us now work out the matrix elements for $L_-,L_+$. Now, $$L_{\pm}\Ket{l,m} = \Lambda_{\pm}\Ket{l, m\pm1}$$ Taking the length of the vector on both sides and also using the fact$ L_+^{\dag} = L_-$, we have $$\Bra{l,m}L_{\mp}L_{\pm}\Ket{l,m} = {l(l+1) - m(m\pm1)}\hbar^2$$
+This should condense to the following matrix representations,
+$$\Bra{l',m'}J_{\pm}\Ket{l,m} = \sqrt{l(l+1)-m(m\pm1)}\hbar\delta_{ll'}\delta{m'm\pm1}$$
+
+From now onwards, the discussion would continue based on what values of $l$ the particle can take. In case of $l = 1/2$, we say we are talking about the family of particles having \textbf{spin one half}. Electrons, Protons, Neutrons all enter this family of half integral spin particles, called as \textbf{Fermions}. There are particles with integer spin also. Particles like the Graviton, Photons all form another group of particles called as \textbf{Bosons}. The naming is so because each ensemble of particles follows either the \textbf{Fermi-Dirac Statistics} or the \textbf{Bose Einstein Statistics} respectively. Let us discuss first about the spin half particles.
 \end{document}
