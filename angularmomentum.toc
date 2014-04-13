@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Angular Momentum Operator}{2}
+\contentsline {section}{\numberline {2}Commutators and Properties}{4}
+\contentsline {subsection}{\numberline {2.1}Ladder Operators}{5}
+\contentsline {section}{\numberline {3}Eigenvalues related to spherical coordinates}{6}
+\contentsline {subsection}{\numberline {3.1}Finding out the $\phi $ based eigenvalues}{6}
+\contentsline {subsection}{\numberline {3.2}Finding out the $\theta $ based eigenvalues}{8}
+\contentsline {section}{\numberline {4}Matrix Mechanical Formulation of Angular Momentum}{9}
+\contentsline {section}{\numberline {5}Two Spin $\frac {1}{2}$ particles in a quantum state}{12}

@@ -4,6 +4,10 @@
 \usepackage{graphicsx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
 % Palatino font (ppl must be installed).
 \renewcommand*\rmdefault{ppl}
 % Iwona font (iwona must be installed).
@@ -14,8 +18,11 @@
 \author{Anurag Pallaprolu \\Physics and Electronics\\ BITS Pilani}
 \maketitle
 \begin{abstract}
-This article deals with the angular momentum viewpoint of quantum mechanics. It is a review of the chapters \textbf{Angular Momentum} in both \textbf{Landau and Lifshitz} as well as \textbf{V. Devanathan}. It also deals with a bit of central force theory and the discussion of the Hydrogen atom as an example of a Coulombic central force.
+This article deals with the angular momentum viewpoint of quantum mechanics. It is a review of the chapters \textbf{Angular Momentum} in both \textbf{Landau and Lifshitz} as well as \textbf{V. Devanathan}. It deals with spin half particles in a bit of detail along with the explanation of the concepts of isospin and hypercharge in particle physics.
 \end{abstract}
+\tableofcontents
+\setcounter{tocdepth}{3}
+\clearpage
 \section*{Introduction}
 Any object moving under the influence of a central force exhibits certain characteristic properties. There are a few quantites that do not change when the object is undergoing motion here. Such quantities are called as \textbf{conserved quantities or conserved observables}. According to a standard theorem in classical mechanics known as \textbf{Noether's Theorem}, any conservation law is due to some sort of a symmetry in the spacetime structure of the system. In much deeper physics, breaking of such symmetries is believed to create new particles/energy quanta. 
 
@@ -54,8 +61,8 @@ $$L_+ = \hbar e^{i\phi}(\pbyp{}{\theta} + i\cot\theta\pbyp{}{\phi})$$
 $$L_- = \hbar e^{-i\phi}(-\pbyp{}{\theta} + i\cot\theta\pbyp{}{\phi})$$
 
 Notice the exactness of \textbf{$\vect{L}^2$} and the \textbf{angular part of the Laplacian expressed in spherical coordinates}. This fact will also be impressed upon when we talk about Hydrogen atom and the Schrodinger equation there. If you can't wait, then here's the news, the eigenfunctions of the squared angular momentum operator are the \textbf{spherical harmonic} wavefunctions of the Hydrogen atom. The other variable separable solution is the radial equation which gives the radial wavefunction of the atom. The Laplacian is present in the Schrodinger's equation in three dimensions, to link all of the facts up.
-
-\section{Finding out the $\phi$ based eigenvalues}
+\section{Eigenvalues related to spherical coordinates}
+\subsection{Finding out the $\phi$ based eigenvalues}
 Now, we shall look towards working out the eigenvalues for the $L_z$ observable. The form of the observable in spherical polar coordinates is given in the previous section.Before, this, we shall mention a convention as to set $\hbar = 1$ in our calculations henceforth, as it is just a constant and dimensionalysis should set it right. Now, we have to solve $$L_z\psi = m\psi$$ $$-i\hbar\pbyp{\psi}{\phi} = m\psi$$ The last differential equation has a very starighforward solution, and after normalising, the answer turns out to be 
 $$\psi(\phi) = \frac{e^{\pm im\phi}}{\sqrt {2\pi}}$$
  
@@ -92,7 +99,7 @@ $$\eta_l = m_1(m_1-1)$$
 $$\eta_l = m_2(m_2+1)$$
 The equality that follows ensues the fact $$m_1 = -m_2 = l$$ Now its simple, the eigenvalues of \textbf{$\vect{L}^2$} are nothing but $\eta_l = l(l+1)\hbar^2$ and the values of $m$ range from $-l$ to $l$ through 0, i.e., a total of $2l+1$ values.
 
-\section{Finding out the $\theta$ based eigenvalues}
+\subsection{Finding out the $\theta$ based eigenvalues}
 So far, we have seen how to derive the azimuthal wavefunction based on angular momentum considerations. Now, we shall solve for the wavefunction related to $\theta$ coordinate. The procedure is again, very innovative, as described by \textbf{Landau and Lifshitz}. Let us define a combined wavefunction for both $\theta$ and $\phi$ $$Y_{lm} = \Phi(\phi)\Theta(\theta)$$ Now, as we have discussed before, there are bounds on the number $m$, the maximum being $l$. This implies $$L_+Y_{ll} = 0$$ Using the spherical polar coordinate representation of the $L_+$ operator and also we know $\Phi(\phi) = \frac{e^{\pm im\phi}}{\sqrt {2\pi}}$ This can all be condensed to 
 $$L_+Y_{ll} = L_+(\frac{e^{\pm im\phi}}{\sqrt {2\pi}}) = 0$$
 $$\dbyd{\Theta_{ll}}{\theta} - l\cot{\theta}\Theta_{ll} = 0$$
@@ -108,12 +115,118 @@ We shall now discuss about another formulation of angular momentum in quantum me
 $$L^2\Ket{l,m} = l(l+1)\hbar^2\Ket{l,m};  L_z\Ket{l,m} = m\hbar\Ket{l,m}$$
 Now from basic braket calculus, we know that, for any observable $A$ in some state $\psi_j$, the matrix elements for the linear transformation is given by
 $$\Bra{\psi_i}A\Ket{\psi_j} = A_{ij}$$ Hence,
-$$\Bra{l',m'}L^2\Ket{l,m} = l(l+1)\hbar^2\delta_{ll'}\delta_{mm'}$$
-$$\Bra{l',m'}L_z\Ket{l,m} = m\hbar^2\delta_{ll'}\delta_{mm'}$$
+$$\Bra{l',m'}L^2\Ket{l,m} = l(l+1)\delta_{ll'}\delta_{mm'}$$
+$$\Bra{l',m'}L_z\Ket{l,m} = m\delta_{ll'}\delta_{mm'}$$
 
-Let us now work out the matrix elements for $L_-,L_+$. Now, $$L_{\pm}\Ket{l,m} = \Lambda_{\pm}\Ket{l, m\pm1}$$ Taking the length of the vector on both sides and also using the fact$ L_+^{\dag} = L_-$, we have $$\Bra{l,m}L_{\mp}L_{\pm}\Ket{l,m} = {l(l+1) - m(m\pm1)}\hbar^2$$
+Let us now work out the matrix elements for $L_-,L_+$. Now, $$L_{\pm}\Ket{l,m} = \Lambda_{\pm}\Ket{l, m\pm1}$$ Taking the length of the vector on both sides and also using the fact$ L_+^{\dag} = L_-$, we have $$\Bra{l,m}L_{\mp}L_{\pm}\Ket{l,m} = {l(l+1) - m(m\pm1)}$$
 This should condense to the following matrix representations,
-$$\Bra{l',m'}J_{\pm}\Ket{l,m} = \sqrt{l(l+1)-m(m\pm1)}\hbar\delta_{ll'}\delta{m'm\pm1}$$
+$$\Bra{l',m'}J_{\pm}\Ket{l,m} = \sqrt{l(l+1)-m(m\pm1)}\delta_{ll'}\delta{m'm\pm1}$$
 
-From now onwards, the discussion would continue based on what values of $l$ the particle can take. In case of $l = 1/2$, we say we are talking about the family of particles having \textbf{spin one half}. Electrons, Protons, Neutrons all enter this family of half integral spin particles, called as \textbf{Fermions}. There are particles with integer spin also. Particles like the Graviton, Photons all form another group of particles called as \textbf{Bosons}. The naming is so because each ensemble of particles follows either the \textbf{Fermi-Dirac Statistics} or the \textbf{Bose Einstein Statistics} respectively. Let us discuss first about the spin half particles.
+From now onwards, the discussion would continue based on what values of $l$ the particle can take. In case of $l = 1/2$, we say we are talking about the family of particles having \textbf{spin one half}. Electrons, Protons, Neutrons all enter this family of half integral spin particles, called as \textbf{Fermions}. There are particles with integer spin also. Particles like the Graviton, Photons all form another group of particles called as \textbf{Bosons}. The naming is so because each ensemble of particles follows either the \textbf{Fermi-Dirac Statistics} or the \textbf{Bose Einstein Statistics} respectively. Let us discuss first about the spin half particles. In this case, the particles can take two spin orientations (described by $m$) as either spin up or spin down. In the general case, when we try constructing the angular momentum matrices, they are of the order of $2l+1$ square matrices. In this case, using the matrix formulae described above, we can construc the matrices as given below
+
+$$
+L^2 = 
+\begin{pmatrix} 
+  \frac{3}{4}     & 0\\ 
+  0 & \frac{3}{4} 
+\end{pmatrix}
+$$
+$$
+L_z = 
+\begin{pmatrix} 
+  \frac{1}{2}     & 0\\ 
+  0 & \frac{-1}{2} 
+\end{pmatrix}
+$$
+$$
+L_+ = 
+\begin{pmatrix} 
+  0     & 1\\ 
+  0 & 0 
+\end{pmatrix}
+$$
+$$
+L_- = 
+\begin{pmatrix} 
+  \frac{3}{4}     & 0\\ 
+  0 & \frac{3}{4} 
+\end{pmatrix}
+$$
+$$
+L_x = 
+\begin{pmatrix} 
+  0     & \frac{1}{2}\\ 
+  \frac{1}{2} & 0 
+\end{pmatrix}
+$$
+$$
+L_y = 
+\begin{pmatrix} 
+  0    & \frac{-i}{2}\\ 
+  \frac{i}{2} & 0 
+\end{pmatrix}
+$$
+The formulae for $L_x, L_y$ can be got from the relations with the ladder operators. Now, we shall introduce the \textbf{Pauli Spin Matrices}. Notice that we can write
+$$
+L_x = 
+\begin{pmatrix} 
+  0     & \frac{1}{2}\\ 
+  \frac{1}{2} & 0 
+\end{pmatrix}
+=\frac{1}{2}
+\begin{pmatrix} 
+  0     & 1\\ 
+  1 & 0 
+\end{pmatrix}
+$$
+$$
+L_y = 
+\begin{pmatrix} 
+  0    & \frac{-i}{2}\\ 
+  \frac{i}{2} & 0 
+\end{pmatrix}
+=\frac{1}{2}
+\begin{pmatrix} 
+  0     & -i\\ 
+  i & 0 
+\end{pmatrix}
+$$
+$$
+L_z = 
+\begin{pmatrix} 
+  \frac{1}{2}     & 0\\ 
+  0 & \frac{-1}{2} 
+\end{pmatrix}
+=\frac{1}{2}
+\begin{pmatrix} 
+   1  & 0\\ 
+  0 & -1 
+\end{pmatrix}
+$$
+The matrices in the parantheses of the last expression form a group of representations called as the Pauli Spin Matrices. They can be easily remembered by the following notation simplified by the Kronecker delta
+
+$$
+\sigma_j = 
+\begin{pmatrix} 
+  \delta_{j3}     & \delta_{j1}+i\delta_{j2}\\ 
+  \delta_{j1}-i\delta_{j2} & -\delta_{j3} 
+\end{pmatrix}
+$$
+Hence, for every $$L_j = \frac{1}{2}\sigma_j$$ The Pauli matrices are restricted to the analysis of spin one half particles only. For other spins, we can find or construct other standard matrices based on the similarities of each angular momentum matrix. Using spin half particles, we can now construct a new spin space with two basis kets $\Ket{\alpha}$ and $\Ket{\beta}$ defined as the matrices $(1 0)$ and $(0 1)$. In this new notation, we can simply express the previous properties as $$L^2\Ket{\alpha} = \frac{3}{4}\Ket{\alpha} ; L^2\Ket{\beta} = \frac{3}{4}\Ket{\beta}$$
+$$L_z\Ket{\alpha} = \frac{1}{2}\Ket{\alpha} ; L_z\Ket{\beta} = -\frac{1}{2}\Ket{\beta}$$ The above relation is the base case for discrimination of spin up and spin down particles. The next sections will discuss the quantum systems with two spin half particles and we shall end the discussion with another section on \textbf{Isospin} and a few advanced topics.
+
+\section{Two Spin $\frac{1}{2}$ particles in a quantum state}
+
+The central theme of discussion will be the various types of combinations that can be possible with two spin half particles. This topic is usually discussed under a wide variety of headings such as \textbf{Identical Particles} or \textbf{Fermi Statistics} as we are ultimately studying the properties of Fermions. The basic uncoupled state vectors in the system will be represented as $\Ket{s,m}$ where s is the spin of the particle. There are four different situations that can rise here
+$$\chi(3,1) = \alpha_1\alpha_2$$
+$$\chi(3,-1) = \beta_1\beta_2$$
+$$\chi(3,0) = \sqrt{\frac{1}{2}}(\alpha_1\beta_2+\beta_1\alpha_2)$$
+$$\chi(1,0) =  \sqrt{\frac{1}{2}}(\alpha_1\beta_2-\beta_1\alpha_2)$$
+If you are confused regarding the terminology of $\alpha$ and $\beta$, they are called just to identify different identical particles(!). Each of the above coupled states can be represented in general with the help of linear combinations of uncoupled $\Ket{s,m}$ of independent particles. The coefficients in each expansion are the famous \textbf{Clebsch-Gordan Coefficients}. 
+
+$$\Ket{S,m} = \sum_{m_1,m_2}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l,m}\Ket{l_1,m_1}\Ket{l_2,m_2}$$ There are standard tables that can be found anywhere online or in a standard quantum chemistry textbook. They are useful in determining the amplitudes of a system to be in one of the ket vectors described before. There are a few simple properties of these coefficients which will be described below, which include a few interesting symmetry properties. From the orthonormality of the kets $$\Braket{j_1,j_2,m'_1,m'_2|j_1,j_2,m_1,m_2} = \delta_{m_1m'_1}\delta_{m_2m'_2}$$
+$$\Braket{j_1,j_2,j',m'|j_1,j_2,j,m} = \delta_{jj'}\delta_{mm'}$$ Using these, and the definitions of Clebsch Gordan coefficients in the uncoupled expansion of the left hand side kets we can get the following relation 
+$$\sum_{m_1,m_2}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l,m}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l',m'} = \delta_{jj'}\delta_{mm'}$$
+$$\sum_{jm}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l,m}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l',m'} = \delta_{jj'}\delta_{mm'}$$
+There are many symmetry properties of these coefficients, the most important ones given below
 \end{document}
