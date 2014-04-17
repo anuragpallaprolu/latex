@@ -1,7 +1,31 @@
 \begin{thebibliography}{1}
 
-\bibitem{Nobody06}
-Nobody Jr.
-\newblock My article, 2006.
+\bibitem{acadml}
+A.D.~McLachlan A.~Carrington.
+\newblock Introduction to magnetic resonance.
+\newblock {\em Chapman and Hall, London}, 1967.
+
+\bibitem{Feyn}
+Richard Feynman, Robert~Leighton.
+\newblock {The Feynman Lectures In Physics: Volume 1}.
+\newblock {\em Pearson Prentice Hall, New Jersey}, 2001.
+
+\bibitem{npb}
+The Nobel~Prize Foundation.
+\newblock {The Nobel Prize in Physics 1952}, 1952.
+
+\bibitem{jph}
+Joseph Hornak.
+\newblock Concepts in {NMR} spectroscopy.
+\newblock {\em Rochester Institute Of Technology}, pages 13--15, 1996,1997.
+
+\bibitem{JAJ}
+James Jones.
+\newblock Nuclear magnetic resonance quantum computation.
+\newblock {\em Springer-Verlag, Clarendon Library, Oxford}, pages 3--4, 1999.
+
+\bibitem{me}
+Anurag Pallaprolu.
+\newblock {Angular Momentum In Quantum Mechanics: A Survey(unpublished)}, 2014.
 
 \end{thebibliography}
