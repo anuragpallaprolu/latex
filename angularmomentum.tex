@@ -101,12 +101,12 @@ The equality that follows ensues the fact $$m_1 = -m_2 = l$$ Now its simple, the
 
 \subsection{Finding out the $\theta$ based eigenvalues}
 So far, we have seen how to derive the azimuthal wavefunction based on angular momentum considerations. Now, we shall solve for the wavefunction related to $\theta$ coordinate. The procedure is again, very innovative, as described by \textbf{Landau and Lifshitz}. Let us define a combined wavefunction for both $\theta$ and $\phi$ $$Y_{lm} = \Phi(\phi)\Theta(\theta)$$ Now, as we have discussed before, there are bounds on the number $m$, the maximum being $l$. This implies $$L_+Y_{ll} = 0$$ Using the spherical polar coordinate representation of the $L_+$ operator and also we know $\Phi(\phi) = \frac{e^{\pm im\phi}}{\sqrt {2\pi}}$ This can all be condensed to 
-$$L_+Y_{ll} = L_+(\frac{e^{\pm im\phi}}{\sqrt {2\pi}}) = 0$$
+$$L_+Y_{ll} = L_+(\frac{e^{\pm im\phi}}{\sqrt {2\pi}})\Theta(\theta) = 0$$
 $$\dbyd{\Theta_{ll}}{\theta} - l\cot{\theta}\Theta_{ll} = 0$$
 
 This is a standard equation, whose solution can be seen as $\Theta_{ll} = \lambda\sin^l\theta$ where $\lambda$ is a constant, function of $l$ which is to be determined by normalization. The normalization condition is 
 $$\int_0^\pi |\Theta_{lm}|^2\sin\theta d\theta = 1$$
-Now we have to derive the value of $\Theta_{lm}$ from $\Theta_{ll}$. Using the equation $$L_-Y_{l,m+1} = (L_-)_{m,m+1}Y_{lm} = \sqrt{(l-m)(l+m+1)}Y_{lm}$$,we can achieve the required conversion by its repeated application.
+Now we have to derive the value of $\Theta_{lm}$ from $\Theta_{ll}$. Using the equation $$L_-Y_{l,m+1} = (L_-)_{m,m+1}Y_{lm} = \sqrt{(l-m)(l+m+1)}Y_{lm}$$ we can achieve the required conversion by its repeated application.
 The final answer shall be stated
 $$\Theta_{lm}(\theta) = (-i)^l\sqrt{\frac{(2l+1)(l+m)!}{2(l-m)!}}\frac{1}{2^ll!\sin^m\theta}\frac{d^{l-m}}{d(cos\theta)^{l-m}}sin^2l\theta$$
 
@@ -228,5 +228,7 @@ $$\Ket{S,m} = \sum_{m_1,m_2}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l,m}\Ket{l_1,m_1}\Ket
 $$\Braket{j_1,j_2,j',m'|j_1,j_2,j,m} = \delta_{jj'}\delta_{mm'}$$ Using these, and the definitions of Clebsch Gordan coefficients in the uncoupled expansion of the left hand side kets we can get the following relation 
 $$\sum_{m_1,m_2}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l,m}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l',m'} = \delta_{jj'}\delta_{mm'}$$
 $$\sum_{jm}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l,m}\mathcal{C}_{l_1,m_1,l_2,m_2}^{l',m'} = \delta_{jj'}\delta_{mm'}$$
-There are many symmetry properties of these coefficients, the most important ones given below
+There are many symmetry properties of these coefficients, the most important ones given above. 
+\bibliographystyle{plain}
+\bibliography{amom}
 \end{document}

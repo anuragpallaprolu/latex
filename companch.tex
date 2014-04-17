@@ -1,6 +1,8 @@
 \documentclass[11pt]{article}
 \usepackage{amsmath}
 \usepackage{amsfonts}                                                                                                                                                      
+\usepackage{graphicsx}
+\usepackage{hyperref}
 \tolerance=1
 \emergencystretch=\maxdimen
 \hyphenpenalty=10000
@@ -195,7 +197,7 @@ $$f(z_{0}) = \frac{1}{2\pi}\int_0^{2\pi} f(z_{0} + \rho\exp(i\theta))\mathrm{d}\
 	Then, the maximum modulus principle states that, if a function $f$ is analytic and non constant in a given domain $\mathcal{D}$,then $|f(z)|$ has no maximum value in $\mathcal{D}$. That is, there is no point $z_{0}$ in the domain such that $|f(z)| \leq |f(z_{0})|$ for all points $z$ in it.  This has a very interesting corollary. Suppose that $f$ is continuous on a closed bounded region $\mathcal{R}$ and that it is analytic and non constant in the interior of $\mathcal{R}$. Then, the maximum value of $f$ occurs only on the boundaries of $\mathcal{R}$ and \textbf{never} in the interior. This principle is also sometimes called as \textbf{extremal principle} for its nature of finding extrema on the boundaries.
 \end{description}
 \section{Taylor and Laurent Series}
- We now move on to representing analytic functions in forms of power series of a variable z. This procedure usually leads to two cases. If the domain in which we are generating the series has singularities, then these cannot be included in a \textbf{Taylor series} because the series expansion usually has positive powers of the variable and hence does not account for any indefiniteness. However, when we discuss about \textbf{Laurent Series} we usually include the exponent of the variable starting from $-\infty$ to $\infty$. Hence, any sort of singularities such as \textbf{multiple poles} and \textbf{essential singularities} can be represented as either an exponent having a finite negative exponent or $-\infty$ negative exponent for an irremovable singularity.
+ We now move on to representing analytic functions in forms of power series of a variable z. This procedure usually leads to two cases. If the domain in which we are generating the series has singularities, then these cannot be included in a \textbf{Taylor series} because the series expansion has positive powers of the variable and hence does not account for any indefiniteness. However, when we discuss about \textbf{Laurent Series} we include the exponent of the variable starting from $-\infty$ to $\infty$. Hence, any sort of singularities such as \textbf{multiple poles} and \textbf{essential singularities} can be represented as either an exponent having a finite negative exponent or $-\infty$ negative exponent for an irremovable singularity.
 
 There won\rq{}t be much of a discussion about series here. Just the two formulae will be presented here.
 \begin{description}
@@ -218,7 +220,7 @@ Based on the value of the negative exponent $n$ we can classify the types of sin
 \item[Simple Pole] \hfill \\
 	Here, the function is not analytic at a point and there might be other singularities around. It is called a \textbf{Simple} pole because it contributes only upto the $\frac{1}{z-z_{0}}$ term of the Laurent series and no more. These types of poles are used to evaluate \textbf{residues} of the complex functions, a technique which will yield a very good way to evaluate integrals. Anyway, more on this later. Moral of the story: $n = 1$.
 \item[Multiple Pole] \hfill \\
-	Nothing much to say. $n \leq 1$ and $n > -\infty$.
+	Nothing much to say, the title being self explanatory. $n \leq 1$ and $n > -\infty$.
 \item[Essential Singularity] \hfill \\
 	The concept of essential singularity is quite simple. If for a funciton $f$, there exists a singularity which is a pole of order a very large number $\mathcal{N} \to \infty$ then we can say that the singularity is an essential or an \textbf{irremovable} singularity as it extends upto negative infinity. 
 \end{description}
@@ -229,7 +231,7 @@ $$b_{n} = \frac{1}{2\pi i}\int_{\mathcal{C}}\frac{f(z)\mathrm{d}z}{(z-z_{0})^{-n
 Putting $n=1$ and rearranging terms,
 $$\int_{\mathcal{C}}f(z)\mathrm{d}z = 2\pi ib_{1}$$
 
-$Voila!$ Now, the power of this simple substitution is apparent. We can now just expand the integrand in its Laurent series, pick up the coefficient $b_{1}$ and multiply it with $2\pi i$ and the answer has presented itself. However, issues start to arise in the step of expanding into a Laurent series. A simple standard function can be expanded easily. But, we shall develop techniques of extracting the residue( by the way if you are wondering what a residue is, it is $b_{0}$).
+$Voila!$ Now, the power of this simple substitution is apparent. We can now just expand the integrand in its Laurent series, pick up the coefficient $b_{1}$ and multiply it with $2\pi i$ and the answer has presented itself. However, issues start to arise in the step of expanding into a Laurent series. A simple standard function can be expanded easily. But, we shall develop techniques of extracting the residue( by the way if you are wondering what a residue is, it is $b_{1}$).
 
 To be slightly rigorous, presenting \textbf{Cauchy\rq{}s residue theorem}.
 \begin{description}
@@ -237,7 +239,7 @@ To be slightly rigorous, presenting \textbf{Cauchy\rq{}s residue theorem}.
 	Let $\mathcal{C}$ be a simple closed contour, described in the positive sense. If a function $f$ is analytic inside and on $\mathcal{C}$ except for a finite number of singular points $z_{k}(k=1,2,..n)$ inside $\mathcal{C}$, then
 $$\int_{\mathcal{C}}f(z)\mathrm{d}z = 2\pi i\sum_{k=1}^{n}Res_{z=z_{k}}f(z)$$
 
-\item[Boas\rq{} Residue Modification] \hfill \\
+\item[Boas\rq{} Residue Theorem] \hfill \\
 	Let $f$ be analytic everywhere in the finite plane except for a few singular points interior to $\mathcal{C}$. Then,
 $$\int_{\mathcal{C}}f(z)\mathrm{d}z = 2\pi i Res_{z=0}[\frac{f(1/z)}{z^2}]$$
 
@@ -257,10 +259,18 @@ $$Res_{z=z_{0}}\frac{p(z)}{q(z)} = \frac{p(z_{0})}{q\rq{}(z_{0})}$$
 In this last section of the document, we shall deal with the evaluation of improper integrals and also we shall state a few miscellaneous useful theorems related to evaluating such integrals and their corresponding residues. 
 
 \subsection{Evaluation of Improper Integrals by Residue Theorem}
-When we say improper integrals, we always mean the \textbf{Cauchy principal value} of the integral evaluated as the upper and lower limits tend to $\infty$ and $-\infty$ respectively. This, in contrast with the other definition of improper integrals, \textbf{the converging partial sum picture}, is not what is going to be discussed here. Let $f(x)$ be a function of a real variable $x$ and let it be a rational function. Now, we are supposed to evaluate $\int_-\infty^{\infty} f(x)dx$. We switch to the Argand plane in which we consider $f(z) = \frac{p(z)}{q(z)}$. Now, consider only the roots of $q(z)$ that are above the x axis, and take the contour as a semicircle $\mathcal{C}_\rho$ and take $\rho$ large enough to enclose all the roots. Now, splitting the path into two parts, one the semicircle and the other, the diameter which lies on the x axis, the entire integral can be split into:
+When we say improper integrals, we always mean the \textbf{Cauchy principal value} of the integral evaluated as the upper and lower limits tend to $\infty$ and $-\infty$ respectively. This, in contrast with the other definition of improper integrals, \textbf{the converging partial sum picture}, is not what is going to be discussed here. Let $f(x)$ be a function of a real variable $x$ and let it be a rational function. Now, we are supposed to evaluate $\int_{-\infty}^{\infty} f(x)dx$. We switch to the Argand plane in which we consider $f(z) = \frac{p(z)}{q(z)}$. Now, consider only the roots of $q(z)$ that are above the x axis, and take the contour as a semicircle $\mathcal{C}_\rho$ and take $\rho$ large enough to enclose all the roots. Now, splitting the path into two parts, one the semicircle and the other, the diameter which lies on the x axis, the entire integral can be split into:
 $$\int_{-\rho}^{\rho}f(x)dx + \int_{\mathcal{C}_{\rho}}f(z)dz  = 2\pi i\sum_{k=1}^{n}Res_{z=z_{k}}f(z)$$
 $$\int_{-\rho}^{\rho}f(x)dx   = 2\pi i\sum_{k=1}^{n}Res_{z=z_{k}}f(z) -  \int_{\mathcal{C}_{\rho}}f(z)dz$$
-If we can prove that $$\lim_{\rho\to\infty}\int_{\mathcal{C}_{\rho}}f(z)dz = 0$$, then we have essentially evaluated the principal value which we are looking for. To prove that it tends to zero, we have to use the modulus inequality mentioned before and physically show that the \textbf{limit of the upper bound itself is zero} as $\rho$ tends to zero.
+If we can prove that $$\lim_{\rho\to\infty}\int_{\mathcal{C}_{\rho}}f(z)dz = 0$$ then we have essentially evaluated the principal value which we are looking for. To prove that it tends to zero, we have to use the modulus inequality mentioned before and physically show that the \textbf{limit of the upper bound itself is zero} as $\rho$ tends to zero.
+
+\begin{description}
+\item[Choosing the right contour] \hfill \\
+	For even functions $f(x)$, integrating from $-\infty$ to $\infty$ is the same as doubling the integral from $0$ to $\infty$ due to the fact that the area under the curve is symmetric about the y-axis. The hard integrals are the ones having an odd $f(x)$ and the integration limits ranging from $0$ to $\infty$. In such cases, a different contour has to be taken such that it includes only the positive half ray of the x axis. In general, \textbf{the contour must be taken in such a way that it covers one of the poles of the function $f(z)$, most suitably a sector of a circle, with the radial arm on the x axis.} See the figure below
+	\begin{center}
+	\includegraphics[scale=0.6]{arc.png}
+	\end{center}
+\end{description}
 
 \subsection{Jordan\rq{}s Inequality}
 This inequality will be useful when proving such aforementioned limits tending to zero type identities. The inequality itself is a standard one proven by analysis 
@@ -273,5 +283,28 @@ This is useful in establishing the limiting identity in cases where the integran
 We shall deal with \textbf{meromorphic} functions from now on. A function is said to be meromorphic in some domain $\mathcal{D}$ if its singularities consist of poles and only poles. Now, let $f$ be such a meromorphic function and let it traverse a closed Jordan curve $\mathcal{C}$ .  Let it be meromorphic inside the contour, and let it be analytic and nonzero on the contour. Even counting \textbf{multiplicities}. Then, the difference in the argument of $f$ as it traverses one revolution in the contour is a multiple of the difference between the number of zeroes and the number of poles. Mathematically
 $$\frac{1}{2\pi}\Delta_{\mathcal{C}} arg f(z) = Z-P$$
 This is the famous argument principle. The last theorem of this article concerns with Rouche\rq{}s theorem. The statement: Let $f$ and $g$ be two analytic functions, analytic inside and on a closed contour $\mathcal{C}$. Also let $|f(z)|>|g(z)|$ at each point on $\mathcal{C}$. Then both $f$ and $f+g$\textbf{ have the same number of zeroes, including multiplicities, inside $\mathcal{C}$}.
+
+\subsection{Mittag-Leffler's Theorem}
+The theorem is essentially based on expanding meromorphic functions from the poles given in a certain domain of definition. The assumption is that $f(z)$ is analytic at $z=0$, and that the residues at the simple poles $z_1,z_2,z_3,...$ are $b_1,b_2,b_3,...$ respectively. Let the set of poles form a \textbf{modular positively ordered set}. Then,
+$$F(z) = f(0) + \sum_{n=1}^\infty b_n(\frac{1}{z-z_n}+\frac{1}{z_n})$$
+
+\subsection{Steepest Descent Technique}
+This is a method used to evaluate certain specific type of integrals which generalize a large number of standard integral families like \textit{Bessel, Fourier} etc., and it depends upon the concept of a \textbf{saddle} point and hence is sometimes called as \textbf{saddle point method}. A saddle point is a member of the family of extrema of multivariate functions. Since, the real and imaginary parts of any complex function are in general multivariate functions, we might make a connection here. Given a function $f(x,y)$ we construct the \textbf{Hessian Determinant} $\mathcal{H}$ as follows,
+$$\mathcal{H} = f_{xx}(x_0,y_0)f_{yy}(x_0,y_0)-(f_{xy}(x_0,y_0))^2$$
+If $\mathcal{H}$ is negative definite, then we say that the point of extremum $(x_0,y_0)$ is a saddle point of $f(x,y)$. With this definition done, we can now dive into the method. It was first found by \textbf{Bernhard Riemann} and is used to evaluate integrals of the form $$I(\lambda) = \int_{\mathcal{C}}e^{\lambda p(z)}q(z)$$ Most of the focus on this method would be on the complex function(polynomial) $p(z)$. If we call $p(z) = u(x,y)+iv(x,y)$, then the integrand is converted to $$e^{\lambda u}e^{i\lambda v}q(z)$$ Now, at large $\lambda$, it is possible to approximate this integral. But, the approximation will only be stable if not for the oscillating factor of $e^{i\lambda v}$. Hence, if $v(x,y) = v(x_0,y_0) = 0$, then one problem has been solved. Therefore, we next look forward to simplifying the utmost structure of $p(z)$ itself. From analysis, we know by experience that polynomials are the most pleasant of all integrable functions to work with. Hence, we need a polynomial expansion of $p(z)$ which is also simplified (we would not like a clumsy Taylor series). We look to expand the function $p(z)$ around one of its saddle points $z_0 = (x_0, y_0)$. In this case, it might become unwieldy to find the real and imaginary parts of $p(z)$, hence, we adopt the following definition of 
+\begin{description}
+\item[Saddle Points of Order N-1] \hfill \\
+	The point $z_0$ is called as the saddle point of order N-1 if $$p'(z_0),p''(z_0),....p^{N-1}(z_0)=0;  p^{N}(z_0) \neq 0$$
+\end{description}
+
+Now, expanding in a Taylor series around the saddle point gives us $$p(z) \approx p(z_0)+\frac{(z-z_0)^n}{N!}p^N(z_0)$$
+Now, taking the contour to be $z = z_0 + \rho e^{i\theta}$ and that $p^N(z_0) = ae^{i\alpha}$. This substitution leaves us with the following
+$$p(z) \approx p(z_0) + \rho^N \frac{ae^{i(N\theta + \alpha)}}{N!}$$
+Note that the imaginary or the oscillating part will be zero if and only if $\sin(N\theta+\alpha) = 0$. This implies there are two solutions to $\theta$, one for \textbf{steepest ascent} and the other one for \textbf{steepest descent}. We choose the latter, as the title suggests. Hence, the curve of steepest descent for the function $p(z)$ is given by
+$$\theta = -\frac{\alpha}{N} + (2k+1)\frac{\pi}{N}$$
+Hence, the algorithm for the method of steepest descent is really just finding the saddle points (according to the last definition) of $p(z)$ and then, using the reduced Taylor expression given above, we can deform the integration contour, checking the consistency with Cauchy's theorem, and we can evaluate the integral using either the contour integration or by simplifying the reduced $e^{p(z)}$ term with standard integrals such as the Gaussian etc.
+
+For more examples on steepest descent technique, refer the notes from 
+\url{http://www.maths.manchester.ac.uk/~gajjar/MATH44011/notes/44011_note4.pdf}
 \end{sloppypar}
 \end{document}
