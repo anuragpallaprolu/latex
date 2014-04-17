@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.12)  17 APR 2014 12:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.12)  17 APR 2014 14:06
 entering extended mode
 **angularmomentum.tex
 (C:\Users\anurag\Desktop\VERILOG-Paper\angularmomentum.tex
@@ -1037,40 +1037,39 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 \tf@toc=\write4
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3
 
-] [3]
+] [4]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 48.
- [4] [5] [6] [7] [8] [9] [10]
-[11] [12]
-No file angularmomentum.bbl.
-[13] (C:\Users\anurag\Desktop\VERILOG-Paper\angularmomentum.aux) ) 
+ [5] [6] [7] [8] [9] [10]
+[11] [12] [13] [14] (C:\Users\anurag\Desktop\VERILOG-Paper\angularmomentum.bbl
+[15]) [16] (C:\Users\anurag\Desktop\VERILOG-Paper\angularmomentum.aux) ) 
 Here is how much of TeX's memory you used:
- 23481 strings out of 493921
- 445502 string characters out of 3147279
- 494047 words of memory out of 3000000
- 26317 multiletter control sequences out of 15000+200000
- 33910 words of font info for 84 fonts, out of 3000000 for 9000
+ 23488 strings out of 493921
+ 445653 string characters out of 3147279
+ 493053 words of memory out of 3000000
+ 26320 multiletter control sequences out of 15000+200000
+ 35463 words of font info for 86 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 87i,12n,80p,10472b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program F
-iles/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr
-8a.pfb>
-Output written on angularmomentum.pdf (13 pages, 193059 bytes).
+ 87i,12n,80p,10472b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatin
+o/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on angularmomentum.pdf (16 pages, 213630 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
+ 138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
