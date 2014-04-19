@@ -5,14 +5,26 @@ A.D.~McLachlan A.~Carrington.
 \newblock Introduction to magnetic resonance.
 \newblock {\em Chapman and Hall, London}, 1967.
 
+\bibitem{dirac}
+Paul Adrien~Maurice Dirac.
+\newblock {The Quantum Theory of the Electron}.
+\newblock {\em Proc. R. Soc. Lond, London}, 1928.
+
 \bibitem{Feyn}
 Richard Feynman, Robert~Leighton.
-\newblock {The Feynman Lectures In Physics: Volume 1}.
+\newblock {The Exponential Atmosphere, The Feynman Lectures In Physics: Volume
+  1}.
 \newblock {\em Pearson Prentice Hall, New Jersey}, 2001.
 
 \bibitem{npb}
 The Nobel~Prize Foundation.
 \newblock {The Nobel Prize in Physics 1952}, 1952.
+
+\bibitem{ohio}
+Zhigang Zhang Goong Chen Zijian Diao Philip~R. Hemmer.
+\newblock {NMR Quantum Computing}.
+\newblock {\em Ohio University:
+  http://www.ohio.edu/people/diao/papers/nmr.pdf}, pages 3--4, 2005.
 
 \bibitem{jph}
 Joseph Hornak.
@@ -20,7 +32,7 @@ Joseph Hornak.
 \newblock {\em Rochester Institute Of Technology}, pages 13--15, 1996,1997.
 
 \bibitem{JAJ}
-James Jones.
+Jonathan Jones.
 \newblock Nuclear magnetic resonance quantum computation.
 \newblock {\em Springer-Verlag, Clarendon Library, Oxford}, pages 3--4, 1999.
 
