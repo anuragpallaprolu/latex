@@ -1,14 +1,37 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{acadml}
 A.D.~McLachlan A.~Carrington.
 \newblock Introduction to magnetic resonance.
 \newblock {\em Chapman and Hall, London}, 1967.
 
+\bibitem{kit}
+{Alexei Kitaev}.
+\newblock {Fault-tolerant quantum computation by anyons}.
+\newblock {\em arXiv Reprint: quant-ph/9707021v1. L.D.Landau Institute for
+  Theoretical Physics, Moscow.}, February 2008.
+
+\bibitem{corn}
+John~F. Cornwell.
+\newblock {Group Theory In Physics: Volume 1}.
+\newblock {\em Academic Press, London}, 1984.
+
+\bibitem{ddv1}
+{David P. DiVincenzo}.
+\newblock {The Physical Implementation of Quantum Computation}.
+\newblock {\em arXiv Reprint: quant-ph/0002077v3. IBM T.J. Watson Research
+  Center, New York}, April 2000.
+
 \bibitem{dirac}
 Paul Adrien~Maurice Dirac.
 \newblock {The Quantum Theory of the Electron}.
 \newblock {\em Proc. R. Soc. Lond, London}, 1928.
+
+\bibitem{ddv}
+David~Paul DiVicenzo.
+\newblock Two-bit gates are universal for quantum computing.
+\newblock {\em Phys. Rev. Let. A, Vol 51, 2, TJ Watson Research Center, NY},
+  February, 1995.
 
 \bibitem{Feyn}
 Richard Feynman, Robert~Leighton.
@@ -35,6 +58,21 @@ Joseph Hornak.
 Jonathan Jones.
 \newblock Nuclear magnetic resonance quantum computation.
 \newblock {\em Springer-Verlag, Clarendon Library, Oxford}, pages 3--4, 1999.
+
+\bibitem{ethz}
+{Lieven Vandersypen, Andreas Wallraff}.
+\newblock {NMR Quantum Computing Primer}.
+\newblock {\em IBM Almaden Research Center, Reprinted at ETH Zurich}, 2005.
+
+\bibitem{mni}
+Isaac L.~Chuang Michael A.~Nielsen.
+\newblock {Quantum Computation and Quantum Information}.
+\newblock {\em Cambridge University Press, Cambridge}, 2013.
+
+\bibitem{gnc}
+{Neil A. Gershenfeld, Isaac L. Chuang}.
+\newblock {Bulk Spin-Resonance Quantum Computation}.
+\newblock {\em Science Vol. 275 no. 5298 pp. 350-356}, January 1997.
 
 \bibitem{me}
 Anurag Pallaprolu.

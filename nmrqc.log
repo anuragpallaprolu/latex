@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.12)  18 APR 2014 19:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.3.12)  25 APR 2014 12:27
 entering extended mode
 **nmrqc.tex
 (C:\Users\anurag\Desktop\VERILOG-Paper\nmrqc.tex
@@ -973,96 +973,148 @@ LaTeX Warning: You have requested package `graphicsx',
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen197
 \Gin@req@width=\dimen198
-) (C:\Users\anurag\Desktop\VERILOG-Paper\nmrqc.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 17.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks38
+\thm@bodyfont=\toks39
+\thm@headfont=\toks40
+\thm@notefont=\toks41
+\thm@headpunct=\toks42
+\thm@preskip=\skip121
+\thm@postskip=\skip122
+\thm@headsep=\skip123
+\dth@everypar=\toks43
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count167
+\calc@Bcount=\count168
+\calc@Adimen=\dimen199
+\calc@Bdimen=\dimen200
+\calc@Askip=\skip124
+\calc@Bskip=\skip125
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count169
+\calc@Cskip=\skip126
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count170
+\l_MT_multwidth_dim=\dimen201
+\origjot=\skip127
+Normal \dimen register pool exhausted, switching to extended pool.
+\l_MT_shortvdotswithinadjustabove_dim=\dimen256
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen257
+\l_MT_above_intertext_sep=\dimen258
+\l_MT_below_intertext_sep=\dimen259
+\l_MT_above_shortintertext_sep=\dimen260
+\l_MT_below_shortintertext_sep=\dimen261
+)
+\c@theorem=\count171
+
+(C:\Users\anurag\Desktop\VERILOG-Paper\nmrqc.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 17.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 20.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count167
-\scratchdimen=\dimen199
+\scratchcounter=\count172
+\scratchdimen=\dimen262
 \scratchbox=\box61
-\nofMPsegments=\count168
-\nofMParguments=\count169
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count170
-\MPscratchDim=\dimen200
-\MPnumerator=\count171
-\makeMPintoPDFobject=\count172
-\everyMPtoPDFconversion=\toks39
+\nofMPsegments=\count173
+\nofMParguments=\count174
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count175
+\MPscratchDim=\dimen263
+\MPnumerator=\count176
+\makeMPintoPDFobject=\count177
+\everyMPtoPDFconversion=\toks45
 )
-\c@lstlisting=\count173
+\c@lstlisting=\count178
 \AtBeginShipoutBox=\box62
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 20.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 21.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 24.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 28.
+
+(C:\Users\anurag\Desktop\VERILOG-Paper\nmrqc.toc
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 26.
-
-<nsns.png, id=34, 213.79875pt x 213.79875pt>
-File: nsns.png Graphic file (type png)
- <use nsns.png>
-Package pdftex.def Info: nsns.png used on input line 27.
-(pdftex.def)             Requested size: 192.41708pt x 192.41708pt.
-
-<nnss.png, id=35, 213.79875pt x 213.79875pt>
-File: nnss.png Graphic file (type png)
- <use nnss.png>
-Package pdftex.def Info: nnss.png used on input line 28.
-(pdftex.def)             Requested size: 192.41708pt x 192.41708pt.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 1.
+)
+\tf@toc=\write4
  [2
 
+]
+<nsns.png, id=40, 213.79875pt x 213.79875pt>
+File: nsns.png Graphic file (type png)
+ <use nsns.png>
+Package pdftex.def Info: nsns.png used on input line 33.
+(pdftex.def)             Requested size: 192.41708pt x 192.41708pt.
+
+<nnss.png, id=41, 213.79875pt x 213.79875pt>
+File: nnss.png Graphic file (type png)
+ <use nnss.png>
+Package pdftex.def Info: nnss.png used on input line 34.
+(pdftex.def)             Requested size: 192.41708pt x 192.41708pt.
+ [3
+
  <C:/Users/anurag/Desktop/VERILOG-Paper/nsns.png> <C:/Users/anurag/Desktop/VERI
-LOG-Paper/nnss.png>] [3]
+LOG-Paper/nnss.png>] [4]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 56.
- <ens1.png, id=46, 86.57344pt x 85.82062pt>
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 62.
+ <ens1.png, id=50, 86.57344pt x 85.82062pt>
 File: ens1.png Graphic file (type png)
  <use ens1.png>
-Package pdftex.def Info: ens1.png used on input line 61.
+Package pdftex.def Info: ens1.png used on input line 67.
 (pdftex.def)             Requested size: 86.57321pt x 85.82039pt.
- [4
+ [5
 
- <C:/Users/anurag/Desktop/VERILOG-Paper/ens1.png>] [5] [6
+ <C:/Users/anurag/Desktop/VERILOG-Paper/ens1.png>] [6] [7
 
 ]
-Overfull \hbox (77.14017pt too wide) detected at line 82
+Overfull \hbox (77.14017pt too wide) detected at line 88
 \OMS/cmsy/m/n/12 H[] \OT1/cmr/m/n/12 = [] [] \OMS/cmsy/m/n/12   [] [] \OT1/cmr/
 m/n/12 + [] [] \OMS/cmsy/m/n/12   [] [] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 \U/
 msb/m/n/12 LS \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 \U/msb/m/n/12 B \OMS/cmsy/m/n
@@ -1070,52 +1122,66 @@ msb/m/n/12 LS \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 \U/msb/m/n/12 B \OMS/cmsy/m/n
 mr/m/n/12 + []\OMS/cmsy/m/n/12 N[]J[]N[]
  []
 
-[7] [8
+[8] [9
 
-] <qgate1.png, id=70, 213.79875pt x 213.79875pt>
+] <qgate1.png, id=73, 213.79875pt x 213.79875pt>
 File: qgate1.png Graphic file (type png)
  <use qgate1.png>
-Package pdftex.def Info: qgate1.png used on input line 102.
+Package pdftex.def Info: qgate1.png used on input line 108.
 (pdftex.def)             Requested size: 171.03922pt x 171.03922pt.
 
-[9 <C:/Users/anurag/Desktop/VERILOG-Paper/qgate1.png>]
+[10 <C:/Users/anurag/Desktop/VERILOG-Paper/qgate1.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <12> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 107.
- [10]
-<qhad.png, id=80, 213.79875pt x 213.79875pt>
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 113.
+ [11]
+<qhad.png, id=83, 213.79875pt x 213.79875pt>
 File: qhad.png Graphic file (type png)
  <use qhad.png>
-Package pdftex.def Info: qhad.png used on input line 111.
+Package pdftex.def Info: qhad.png used on input line 117.
 (pdftex.def)             Requested size: 106.89911pt x 106.89911pt.
- [11 <C:/Users/anurag/Desktop/VERILOG-Paper/qhad.png>]
-(C:\Users\anurag\Desktop\VERILOG-Paper\nmrqc.bbl [12]) [13]
+ [12 <C:/Users/anurag/Desktop/VERILOG-Paper/qhad.png>] [13] [14
+
+] [15] [16
+
+] [17]
+<gnc.png, id=107, 456.20438pt x 216.05719pt>
+File: gnc.png Graphic file (type png)
+ <use gnc.png>
+Package pdftex.def Info: gnc.png used on input line 196.
+(pdftex.def)             Requested size: 364.96399pt x 172.84596pt.
+ [18 <C:/Users/anurag/Desktop/VERILOG-Paper/gnc.png>] [19] [20
+
+]
+(C:\Users\anurag\Desktop\VERILOG-Paper\nmrqc.bbl [21]) [22]
 (C:\Users\anurag\Desktop\VERILOG-Paper\nmrqc.aux) ) 
 Here is how much of TeX's memory you used:
- 23566 strings out of 493921
- 446907 string characters out of 3147279
- 491061 words of memory out of 3000000
- 26394 multiletter control sequences out of 15000+200000
- 31490 words of font info for 69 fonts, out of 3000000 for 9000
+ 24191 strings out of 493921
+ 457284 string characters out of 3147279
+ 504138 words of memory out of 3000000
+ 26996 multiletter control sequences out of 15000+200000
+ 36022 words of font info for 77 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 87i,8n,80p,10462b,661s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 87i,10n,80p,10462b,668s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9
 /fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino
-/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on nmrqc.pdf (13 pages, 224339 bytes).
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/palatino/uplri8a.pfb>
+Output written on nmrqc.pdf (22 pages, 287389 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

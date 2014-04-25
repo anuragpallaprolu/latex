@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {subsection}{\numberline {1.1}Ensemble}{5}
+\contentsline {subsection}{\numberline {1.2}The Atomic Hamiltonian}{7}
+\contentsline {section}{\numberline {2}A Quick and Dirty Introduction to Quantum Computing Terminologies}{9}
+\contentsline {subsection}{\numberline {2.1}Qubit}{9}
+\contentsline {subsection}{\numberline {2.2}Quantum Gate}{10}
+\contentsline {subsection}{\numberline {2.3}Walsh-Hadamard Transform}{12}
+\contentsline {section}{\numberline {3}Implementation}{14}
+\contentsline {subsection}{\numberline {3.1}The Bloch Vectors, The Ket and The $\mathbb {SU}(2)\cong \mathbb {SO}(3)$ theorem}{14}
+\contentsline {subsection}{\numberline {3.2}Introducing one qubit gates from the standard $\mathbb {SU}(2)$ rotation gates}{16}
+\contentsline {subsection}{\numberline {3.3}DiVicenzo's Criteria}{20}
